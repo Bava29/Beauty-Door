@@ -27515,3 +27515,35 @@ html[dir="rtl"] .booking-back a i {
     }
 
 }
+
+/* =========================================================
+   CONTACT INFO CARDS — MOBILE
+   ONE BY ONE / FULL WIDTH
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .contact-info-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .contact-info-card,
+    .contact-info-card:nth-child(1),
+    .contact-info-card:nth-child(2),
+    .contact-info-card:nth-child(3) {
+        grid-column: 1 / -1;
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+
+        display: flex;
+        align-items: flex-start;
+
+        padding: 24px 20px;
+        gap: 18px;
+    }
+
+}
