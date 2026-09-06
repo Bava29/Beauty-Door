@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     DASHBOARD LAYOUT
+========================================= -->
+
+    <div class="dashboard-layout">
+
+        <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <button type="button" class="sidebar-close-btn" id="sidebarCloseToggle" aria-label="Close sidebar"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Beauty Door">
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Main Menu -->
+                <div class="sidebar-menu-group">
+
+                    <span class="sidebar-menu-title">
+                        MAIN MENU
+                    </span>
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d2.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </span>
+
+                                <span>Browse Services</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d3.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </span>
+
+                                <span>Book a Service</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d4.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+
+                                <span>My Bookings</span>
+
+                                <span class="sidebar-badge">
+                                    2
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d5.html" class="sidebar-link active">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <span>Track My Visit</span>
+
+                                <span class="sidebar-live">
+                                    LIVE
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d6.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                                <span>My Reviews</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d7.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </span>
+
+                                <span>Invoices</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-mobile-tools">
+
+                <div class="sidebar-mobile-quick-actions">
+                    <button type="button" class="header-icon-btn notification-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="notification" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+
+                    <button type="button" class="header-icon-btn settings-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="settings" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+
+                <button type="button" class="header-profile sidebar-mobile-profile" data-mobile-control="profile"
+                    aria-label="Profile">
+                    <span class="header-avatar">
+                        <img src="images/customer-profile.jpg" alt="Ananya">
+                    </span>
+                    <span class="header-profile-info">
+                        <strong>Ananya</strong>
+                        <small>Beauty Member</small>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Sidebar Bottom -->
+            <div class="sidebar-bottom">
+
+                <!-- Logout -->
+                <button type="button" class="sidebar-logout" id="logoutBtn">
+
+                    <span class="logout-icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+        <div class="dashboard-main-area">
+
+
+            <!-- =====================================
+             FIXED HEADER
+        ====================================== -->
+
+            <header class="dashboard-header">
+
+                <!-- Header Left -->
+                <div class="header-left">
+
+                    <button type="button" class="header-menu-toggle" id="sidebarMenuToggle" aria-label="Open sidebar"
+                        aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+                    <span class="header-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1>
+                        Track Your Visit
+                    </h1>
+
+                </div>
+
+
+                <!-- Header Right -->
+                <div class="header-right">
+
+
+                    <!-- Notifications -->
+                    <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Settings -->
+                    <button type="button" class="header-icon-btn settings-btn" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                        aria-label="Toggle dark mode" title="Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                        title="RTL Mode">
+
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    </button>
+
+
+                    <button type="button" class="header-profile">
+
+                        <span class="header-avatar">
+                            <img src="images/customer-profile.jpg" alt="Ananya">
+                        </span>
+
+                        <span class="header-profile-info">
+
+                            <strong>Ananya</strong>
+
+                            <small>
+                                Beauty Member
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+
+            <main class="track-visit-content">
+
+                <!-- =====================================================
+         SECTION 01 — LIVE VISIT STATUS
+    ====================================================== -->
+                <section class="live-visit-section">
+
+                    <div class="track-page-heading">
+                        <div>
+                            <span class="track-eyebrow">LIVE VISIT TRACKING</span>
+                            <h2>Track Your Beauty Visit</h2>
+                            <p>Stay updated on your beautician's journey to your doorstep.</p>
+                        </div>
+
+                        <span class="live-status-badge">
+                            <i class="fa-solid fa-circle"></i>
+                            LIVE
+                        </span>
+                    </div>
+
+                    <div class="live-visit-card">
+
+                        <div class="live-visit-main">
+
+                            <div class="live-status-icon">
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <div class="live-pulse"></div>
+                            </div>
+
+                            <div class="live-status-content">
+                                <span class="status-label">CURRENT STATUS</span>
+
+                                <h3>Your Beautician Is On The Way</h3>
+
+                                <p>
+                                    Meera has started travelling to your location.
+                                    She is expected to arrive shortly.
+                                </p>
+
+                                <div class="visit-meta-row">
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        Sep 08, 2026
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        10:00 AM
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-solid fa-spa"></i>
+                                        Glow Facial
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="arrival-card">
+
+                            <span class="arrival-label">ESTIMATED ARRIVAL</span>
+
+                            <strong>12–15</strong>
+
+                            <span class="arrival-minutes">minutes</span>
+
+                            <div class="arrival-progress">
+                                <span></span>
+                            </div>
+
+                            <small>
+                                <i class="fa-solid fa-location-dot"></i>
+                                On the way to your location
+                            </small>
+
+                        </div>
+
+                        <div class="live-visit-actions">
+
+                            <button type="button" class="track-action-btn call-beautician-btn">
+                                <i class="fa-solid fa-phone"></i>
+                                Call Beautician
+                            </button>
+
+                            <button type="button" class="track-action-btn message-beautician-btn">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                Message
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 02 — VISIT PROGRESS
+    ====================================================== -->
+                <section class="visit-progress-section">
+
+                    <div class="track-section-heading">
+                        <div>
+                            <span>VISIT PROGRESS</span>
+                            <h2>Your Visit Journey</h2>
+                            <p>Follow your booking from confirmation to completion.</p>
+                        </div>
+
+                        <span class="progress-count">
+                            3 of 6
+                        </span>
+                    </div>
+
+                    <div class="visit-progress-card">
+
+                        <div class="progress-line"></div>
+
+                        <!-- Step 01 -->
+                        <div class="progress-step completed">
+
+                            <div class="progress-step-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div class="progress-step-content">
+                                <strong>Booking Confirmed</strong>
+                                <span>Your appointment has been confirmed.</span>
+                                <small>09:30 AM</small>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Step 02 -->
+                        <div class="progress-step completed">
+
+                            <div class="progress-step-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div class="progress-step-content">
+                                <strong>Beautician Assigned</strong>
+                                <span>Meera has been assigned to your visit.</span>
+                                <small>09:35 AM</small>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Step 03 -->
+                        <div class="progress-step active">
+
+                            <div class="progress-step-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div class="progress-step-content">
+                                <strong>On The Way</strong>
+                                <span>Meera is travelling to your location.</span>
+                                <small>09:48 AM · Current</small>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Step 04 -->
+                        <div class="progress-step">
+
+                            <div class="progress-step-icon">
+                                <i class="fa-solid fa-house"></i>
+                            </div>
+
+                            <div class="progress-step-content">
+                                <strong>Arrived Location</strong>
+                                <span>Waiting for your beautician to arrive.</span>
+                                <small>Upcoming</small>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Step 05 -->
+                        <div class="progress-step">
+
+                            <div class="progress-step-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+
+                            <div class="progress-step-content">
+                                <strong>Service In Progress</strong>
+                                <span>Your beauty service will begin.</span>
+                                <small>Upcoming</small>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Step 06 -->
+                        <div class="progress-step">
+
+                            <div class="progress-step-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+
+                            <div class="progress-step-content">
+                                <strong>Visit Completed</strong>
+                                <span>Your beauty visit has been completed.</span>
+                                <small>Upcoming</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 03 — BEAUTICIAN & VISIT DETAILS
+    ====================================================== -->
+                <section class="beautician-details-section">
+
+                    <div class="track-section-heading">
+                        <div>
+                            <span>YOUR BEAUTICIAN</span>
+                            <h2>Meet Your Beauty Professional</h2>
+                            <p>Get to know the professional coming to your home.</p>
+                        </div>
+                    </div>
+
+                    <div class="beautician-details-layout">
+
+                        <!-- Beautician Card -->
+                        <div class="beautician-profile-card">
+
+                            <div class="beautician-profile-top">
+
+                                <div class="beautician-image-wrap">
+
+                                    <img src="images/beautician-meera.jpg" alt="Meera">
+
+                                    <span class="beautician-online">
+                                        <i class="fa-solid fa-circle"></i>
+                                        On The Way
+                                    </span>
+
+                                </div>
+
+                                <div class="beautician-profile-info">
+
+                                    <span class="profile-role">
+                                        BEAUTY PROFESSIONAL
+                                    </span>
+
+                                    <h3>Meera</h3>
+
+                                    <p>Skin Specialist</p>
+
+                                    <div class="beautician-rating">
+                                        <span>
+                                            <i class="fa-solid fa-star"></i>
+                                            4.9
+                                        </span>
+
+                                        <small>128 Reviews</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="beautician-info-grid">
+
+                                <div class="beautician-info-item">
+                                    <i class="fa-solid fa-award"></i>
+                                    <div>
+                                        <strong>5+ Years</strong>
+                                        <span>Experience</span>
+                                    </div>
+                                </div>
+
+                                <div class="beautician-info-item">
+                                    <i class="fa-solid fa-user-check"></i>
+                                    <div>
+                                        <strong>350+</strong>
+                                        <span>Visits Completed</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="beautician-actions">
+
+                                <button type="button" class="profile-action-btn">
+                                    <i class="fa-regular fa-user"></i>
+                                    View Profile
+                                </button>
+
+                                <button type="button" class="profile-icon-btn call-beautician-btn"
+                                    aria-label="Call beautician">
+                                    <i class="fa-solid fa-phone"></i>
+                                </button>
+
+                                <button type="button" class="profile-icon-btn message-beautician-btn"
+                                    aria-label="Message beautician">
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Visit Details -->
+                        <div class="visit-details-card">
+
+                            <div class="details-card-heading">
+                                <div class="details-heading-icon">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                </div>
+
+                                <div>
+                                    <span>BOOKING DETAILS</span>
+                                    <h3>Your Visit Information</h3>
+                                </div>
+                            </div>
+
+
+                            <div class="visit-detail-list">
+
+                                <div class="visit-detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-spa"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Service</span>
+                                        <strong>Glow Facial</strong>
+                                    </div>
+                                </div>
+
+
+                                <div class="visit-detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Duration</span>
+                                        <strong>60 Minutes</strong>
+                                    </div>
+                                </div>
+
+
+                                <div class="visit-detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Total Amount</span>
+                                        <strong>₹799</strong>
+                                    </div>
+                                </div>
+
+
+                                <div class="visit-detail-item">
+                                    <div class="detail-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>Visit Type</span>
+                                        <strong>Home Visit</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="booking-id-row">
+                                <span>Booking ID</span>
+
+                                <strong>
+                                    BD-20260908-1042
+                                    <button type="button" class="copy-booking-id" data-booking-id="BD-20260908-1042"
+                                        aria-label="Copy booking ID">
+                                        <i class="fa-regular fa-copy"></i>
+                                    </button>
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 04 — LIVE UPDATES & HELP
+    ====================================================== -->
+                <section class="visit-updates-section">
+
+                    <div class="track-section-heading">
+                        <div>
+                            <span>LIVE UPDATES</span>
+                            <h2>Visit Updates & Support</h2>
+                            <p>Stay informed and get help whenever you need it.</p>
+                        </div>
+                    </div>
+
+                    <div class="updates-help-layout">
+
+                        <!-- Updates -->
+                        <div class="visit-updates-card">
+
+                            <div class="updates-card-heading">
+
+                                <div class="updates-heading-icon">
+                                    <i class="fa-regular fa-bell"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Latest Updates</h3>
+                                    <span>Real-time visit activity</span>
+                                </div>
+
+                            </div>
+
+
+                            <div class="visit-update-list">
+
+                                <div class="visit-update-item latest">
+
+                                    <div class="update-dot">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+
+                                    <div class="update-content">
+                                        <strong>Meera is on the way</strong>
+                                        <p>
+                                            Your beautician has started travelling
+                                            to your location.
+                                        </p>
+                                        <small>09:48 AM · Just now</small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="visit-update-item">
+
+                                    <div class="update-dot">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+
+                                    <div class="update-content">
+                                        <strong>Beautician accepted your booking</strong>
+                                        <p>
+                                            Meera confirmed your appointment.
+                                        </p>
+                                        <small>09:42 AM</small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="visit-update-item">
+
+                                    <div class="update-dot">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </div>
+
+                                    <div class="update-content">
+                                        <strong>Booking confirmed</strong>
+                                        <p>
+                                            Your Glow Facial appointment is confirmed.
+                                        </p>
+                                        <small>09:30 AM</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Help -->
+                        <div class="visit-help-card">
+
+                            <div class="help-card-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+
+                            <span class="help-eyebrow">NEED ASSISTANCE?</span>
+
+                            <h3>Need Help With Your Visit?</h3>
+
+                            <p>
+                                Our support team is available if you need help
+                                before or during your beauty visit.
+                            </p>
+
+
+                            <div class="help-action-list">
+
+                                <button type="button" class="help-action-btn support-btn">
+                                    <span>
+                                        <i class="fa-solid fa-headset"></i>
+                                    </span>
+
+                                    <div>
+                                        <strong>Contact Support</strong>
+                                        <small>We're here to help</small>
+                                    </div>
+
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+
+                                <button type="button" class="help-action-btn reschedule-btn">
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                    </span>
+
+                                    <div>
+                                        <strong>Reschedule Visit</strong>
+                                        <small>Choose another time</small>
+                                    </div>
+
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+
+                                <button type="button" class="help-action-btn cancel-visit-btn">
+                                    <span>
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </span>
+
+                                    <div>
+                                        <strong>Cancel Booking</strong>
+                                        <small>Cancel this visit</small>
+                                    </div>
+
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="help-note">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>
+                                    Your booking details are protected and handled securely.
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION MODAL
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-card">
+
+            <button type="button" class="logout-modal-close" id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <span class="logout-modal-label">
+                SIGN OUT
+            </span>
+
+
+            <h2>
+                Are you sure you want to logout?
+            </h2>
+
+
+            <p>
+                You will need to sign in again to access
+                your Beauty Door dashboard.
+            </p>
+
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="cancelLogout">
+
+                    No, Stay
+
+                </button>
+
+
+                <a href="login.html" class="logout-confirm-btn">
+
+                    Yes, Logout
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

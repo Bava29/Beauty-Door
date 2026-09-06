@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body class="auth-body">
+
+    <!-- =========================================
+         REGISTER PAGE
+    ========================================== -->
+
+    <main class="auth-page register-page">
+
+        <!-- Top Controls -->
+        <div class="auth-controls">
+
+            <button type="button" class="auth-control-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
+                title="Dark Mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+            <button type="button" class="auth-control-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL mode" title="RTL Mode">
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Register Card -->
+        <div class="auth-card register-card">
+
+            <!-- Logo -->
+            <a href="index.html" class="auth-logo">
+                <img src="images/logo.png" alt="Beauty Door">
+            </a>
+
+
+            <!-- Heading -->
+            <div class="auth-heading">
+
+                <span class="auth-eyebrow">
+                    CREATE YOUR ACCOUNT
+                </span>
+
+                <h1>
+                    Welcome to
+                    <span>Beauty Door.</span>
+                </h1>
+
+                <p>
+                    Create your account and make your next beauty
+                    appointment simple, comfortable and convenient.
+                </p>
+
+            </div>
+
+
+            <!-- Register Form -->
+            <form class="auth-form" action="#" method="post">
+
+                <!-- Full Name -->
+                <div class="auth-form-group">
+
+                    <label for="register-name">
+                        Full Name
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input type="text" id="register-name" name="name" placeholder="Enter your full name" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="auth-form-group">
+
+                    <label for="register-phone">
+                        Phone Number
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input type="tel" id="register-phone" name="phone" placeholder="Enter your phone number"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="auth-form-group">
+
+                    <label for="register-email">
+                        Email Address
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="register-email" name="email" placeholder="Enter your email address"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="auth-form-group">
+
+                    <label for="register-password">
+                        Password
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="register-password" name="password" placeholder="Create a password"
+                            required>
+
+                        <button type="button" class="password-toggle" data-target="register-password"
+                            aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="auth-form-group">
+
+                    <label for="register-confirm-password">
+                        Confirm Password
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="register-confirm-password" name="confirm_password"
+                            placeholder="Confirm your password" required>
+
+                        <button type="button" class="password-toggle" data-target="register-confirm-password"
+                            aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms -->
+                <div class="register-terms">
+
+                    <label class="terms-option">
+
+                        <input type="checkbox" name="terms" required>
+
+                        <span class="custom-checkbox"></span>
+
+                        <span>
+                            I agree to the
+                            <a href="terms.html">Terms & Conditions</a>
+                            and
+                            <a href="privacy.html">Privacy Policy</a>.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Register Button -->
+                <button type="submit" class="auth-submit-btn">
+
+                    Create Account
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="auth-divider">
+                <span>OR CONTINUE WITH</span>
+            </div>
+
+
+            <!-- Social Login -->
+            <div class="social-login">
+
+                <!-- Google -->
+                <a href="#" class="social-icon-btn google-icon" aria-label="Continue with Google">
+
+                    <img src="images/google-logo.svg" alt="Google">
+
+                </a>
+
+
+                <!-- Facebook -->
+                <a href="#" class="social-icon-btn facebook-icon" aria-label="Continue with Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <!-- Apple -->
+                <a href="#" class="social-icon-btn apple-icon" aria-label="Continue with Apple">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- Login Link -->
+            <div class="auth-register">
+
+                <span>Already have an account?</span>
+
+                <a href="login.html">
+                    Login Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Password Toggle -->
+    <script>
+        const passwordToggles =
+            document.querySelectorAll(".password-toggle");
+
+        passwordToggles.forEach(function (toggle) {
+
+            toggle.addEventListener("click", function () {
+
+                const targetId = this.getAttribute("data-target");
+                const input = document.getElementById(targetId);
+
+                const isPassword = input.type === "password";
+
+                input.type = isPassword ? "text" : "password";
+
+                this.innerHTML = isPassword
+                    ? '<i class="fa-regular fa-eye-slash"></i>'
+                    : '<i class="fa-regular fa-eye"></i>';
+
+            });
+
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

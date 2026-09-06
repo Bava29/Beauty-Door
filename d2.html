@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     DASHBOARD LAYOUT
+========================================= -->
+
+    <div class="dashboard-layout">
+
+        <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <button type="button" class="sidebar-close-btn" id="sidebarCloseToggle" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Beauty Door">
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Main Menu -->
+                <div class="sidebar-menu-group">
+
+                    <span class="sidebar-menu-title">
+                        MAIN MENU
+                    </span>
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d2.html" class="sidebar-link active">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </span>
+
+                                <span>Browse Services</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d3.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </span>
+
+                                <span>Book a Service</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d4.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+
+                                <span>My Bookings</span>
+
+                                <span class="sidebar-badge">
+                                    2
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d5.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <span>Track My Visit</span>
+
+                                <span class="sidebar-live">
+                                    LIVE
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d6.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                                <span>My Reviews</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d7.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </span>
+
+                                <span>Invoices</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-mobile-tools">
+
+                <div class="sidebar-mobile-quick-actions">
+                    <button type="button" class="header-icon-btn notification-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="notification" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+
+                    <button type="button" class="header-icon-btn settings-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="settings" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+
+                <button type="button" class="header-profile sidebar-mobile-profile" data-mobile-control="profile"
+                    aria-label="Profile">
+                    <span class="header-avatar">
+                        <img src="images/customer-profile.jpg" alt="Ananya">
+                    </span>
+                    <span class="header-profile-info">
+                        <strong>Ananya</strong>
+                        <small>Beauty Member</small>
+                    </span>
+                </button>
+            </div>
+
+
+
+            <!-- Sidebar Bottom -->
+            <div class="sidebar-bottom">
+
+                <!-- Logout -->
+                <button type="button" class="sidebar-logout" id="logoutBtn">
+
+                    <span class="logout-icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+        <div class="dashboard-main-area">
+
+
+            <!-- =====================================
+             FIXED HEADER
+        ====================================== -->
+
+            <header class="dashboard-header">
+
+                <!-- Header Left -->
+                <div class="header-left">
+
+                    <button type="button" class="header-menu-toggle" id="sidebarMenuToggle" aria-label="Open sidebar"
+                        aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+                    <span class="header-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1>
+                        Find Your Service
+                    </h1>
+
+                </div>
+
+
+                <!-- Header Right -->
+                <div class="header-right">
+
+
+                    <!-- Notifications -->
+                    <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Settings -->
+                    <button type="button" class="header-icon-btn settings-btn" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                        aria-label="Toggle dark mode" title="Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                        title="RTL Mode">
+
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    </button>
+
+
+                    <button type="button" class="header-profile">
+
+                        <span class="header-avatar">
+                            <img src="images/customer-profile.jpg" alt="Ananya">
+                        </span>
+
+                        <span class="header-profile-info">
+
+                            <strong>Ananya</strong>
+
+                            <small>
+                                Beauty Member
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+
+            <main class="browse-services-content">
+
+
+                <!-- =========================================
+                     SECTION 01
+                     DISCOVER SERVICES
+                ========================================== -->
+
+                <section class="browse-discover-section">
+
+                    <div class="browse-discover-card">
+
+                        <div class="browse-discover-content">
+
+                            <span class="browse-eyebrow">
+                                EXPLORE BEAUTY
+                            </span>
+
+                            <h2>
+                                Find Your Perfect
+                                <strong>Beauty Service.</strong>
+                            </h2>
+
+                            <p>
+                                Discover professional beauty treatments delivered
+                                by trained professionals, right at your doorstep.
+                            </p>
+
+                        </div>
+
+
+                        <div class="browse-discover-art">
+
+                            <div class="discover-art-circle">
+
+                                <i class="fa-solid fa-spa"></i>
+
+                            </div>
+
+                            <span class="discover-art-small">
+                                <i class="fa-solid fa-heart"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Search -->
+
+                    <div class="service-search-area">
+
+                        <div class="service-search-box">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input type="text" id="serviceSearch" placeholder="Search for a service..."
+                                aria-label="Search services">
+
+                            <button type="button" id="clearSearch" class="clear-search-btn" aria-label="Clear search">
+
+                                <i class="fa-solid fa-xmark"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="service-filter-status" id="filterStatus">
+
+                            Showing all services
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     SECTION 02
+                     BEAUTY CATEGORIES
+                ========================================== -->
+
+                <section class="browse-category-section">
+
+                    <div class="browse-section-heading">
+
+                        <div>
+
+                            <span>
+                                CHOOSE A CATEGORY
+                            </span>
+
+                            <h2>
+                                What Are You Looking For?
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="browse-category-grid">
+
+
+                        <!-- ALL -->
+
+                        <button type="button" class="browse-category-card active" data-category="all">
+
+                            <span class="category-card-image">
+
+                                <img src="images/all-service.jpg" alt="All beauty services">
+
+                                <span class="category-card-number">
+                                    01
+                                </span>
+
+                            </span>
+
+                            <span class="category-card-content">
+
+                                <span class="category-card-icon">
+
+                                    <i class="fa-solid fa-spa"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        All Services
+                                    </strong>
+
+                                    <small>
+                                        Explore All
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </button>
+
+
+                        <!-- HAIR -->
+
+                        <button type="button" class="browse-category-card" data-category="hair">
+
+                            <span class="category-card-image">
+
+                                <img src="images/service-hair.jpg" alt="Hair services">
+
+                                <span class="category-card-number">
+                                    02
+                                </span>
+
+                            </span>
+
+                            <span class="category-card-content">
+
+                                <span class="category-card-icon">
+
+                                    <i class="fa-solid fa-scissors"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Hair Care
+                                    </strong>
+
+                                    <small>
+                                        Cut, style & care
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </button>
+
+
+                        <!-- SKIN -->
+
+                        <button type="button" class="browse-category-card" data-category="skin">
+
+                            <span class="category-card-image">
+
+                                <img src="images/service-skin.jpg" alt="Skin services">
+
+                                <span class="category-card-number">
+                                    03
+                                </span>
+
+                            </span>
+
+                            <span class="category-card-content">
+
+                                <span class="category-card-icon">
+
+                                    <i class="fa-solid fa-spa"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Skin Care
+                                    </strong>
+
+                                    <small>
+                                        Glow & nourish
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </button>
+
+
+                        <!-- NAILS -->
+
+                        <button type="button" class="browse-category-card" data-category="nails">
+
+                            <span class="category-card-image">
+
+                                <img src="images/service-nails.jpg" alt="Nail services">
+
+                                <span class="category-card-number">
+                                    04
+                                </span>
+
+                            </span>
+
+                            <span class="category-card-content">
+
+                                <span class="category-card-icon">
+
+                                    <i class="fa-solid fa-hand-sparkles"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Nail Care
+                                    </strong>
+
+                                    <small>
+                                        Nails & art
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </button>
+
+
+                        <!-- BRIDAL -->
+
+                        <button type="button" class="browse-category-card" data-category="bridal">
+
+                            <span class="category-card-image">
+
+                                <img src="images/service-bridal.jpg" alt="Bridal services">
+
+                                <span class="category-card-number">
+                                    05
+                                </span>
+
+                            </span>
+
+                            <span class="category-card-content">
+
+                                <span class="category-card-icon">
+
+                                    <i class="fa-solid fa-crown"></i>
+
+                                </span>
+
+                                <span>
+
+                                    <strong>
+                                        Bridal
+                                    </strong>
+
+                                    <small>
+                                        Your special day
+                                    </small>
+
+                                </span>
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     SECTION 03
+                     POPULAR SERVICES
+                ========================================== -->
+
+                <section class="popular-services-section">
+
+                    <div class="browse-section-heading">
+
+                        <div>
+
+                            <span>
+                                POPULAR CHOICES
+                            </span>
+
+                            <h2>
+                                Beauty Services For You
+                            </h2>
+
+                        </div>
+
+                        <span class="services-count" id="servicesCount">
+
+                            8 Services
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="popular-services-grid" id="servicesGrid">
+
+
+                        <!-- SERVICE 01 -->
+
+                        <article class="browse-service-card" data-category="hair" data-service="Haircut & Styling"
+                            data-price="499" data-duration="45">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/popular-haircut.jpg" alt="Haircut and styling">
+
+                                <span class="service-category-tag">
+                                    HAIR
+                                </span>
+
+                                <button type="button" class="service-favourite"
+                                    aria-label="Add Haircut and Styling to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.9
+                                    </strong>
+
+                                    <span>
+                                        (124)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Haircut & Styling
+                                </h3>
+
+
+                                <p>
+                                    Professional haircut & styling
+                                    tailored to your own look.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        45 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹499
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 02 -->
+
+                        <article class="browse-service-card" data-category="skin" data-service="Glow Facial"
+                            data-price="799" data-duration="60">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/popular-facial.jpg" alt="Glow facial">
+
+                                <span class="service-category-tag">
+                                    SKIN
+                                </span>
+
+                                <button type="button" class="service-favourite"
+                                    aria-label="Add Glow Facial to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.9
+                                    </strong>
+
+                                    <span>
+                                        (98)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Glow Facial
+                                </h3>
+
+
+                                <p>
+                                    Refreshing facial treatment for
+                                    bright & healthy skin.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        60 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹799
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 03 -->
+
+                        <article class="browse-service-card" data-category="skin" data-service="Waxing Care"
+                            data-price="599" data-duration="40">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/popular-waxing.jpg" alt="Waxing care">
+
+                                <span class="service-category-tag">
+                                    SKIN
+                                </span>
+
+                                <button type="button" class="service-favourite"
+                                    aria-label="Add Waxing Care to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.8
+                                    </strong>
+
+                                    <span>
+                                        (86)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Waxing Care
+                                </h3>
+
+
+                                <p>
+                                    Gentle waxing treatment for
+                                    smooth and comfort skin.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        40 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹599
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 04 -->
+
+                        <article class="browse-service-card" data-category="nails" data-service="Nail Art"
+                            data-price="699" data-duration="50">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/popular-nail-art.jpg" alt="Nail art">
+
+                                <span class="service-category-tag">
+                                    NAILS
+                                </span>
+
+                                <button type="button" class="service-favourite" aria-label="Add Nail Art to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.9
+                                    </strong>
+
+                                    <span>
+                                        (76)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Nail Art
+                                </h3>
+
+
+                                <p>
+                                    Creative nail art designed to
+                                    match your personal style.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        50 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹699
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 05 -->
+
+                        <article class="browse-service-card" data-category="hair" data-service="Hair Spa"
+                            data-price="899" data-duration="60">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/service-hair.jpg" alt="Hair spa">
+
+                                <span class="service-category-tag">
+                                    HAIR
+                                </span>
+
+                                <button type="button" class="service-favourite" aria-label="Add Hair Spa to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.8
+                                    </strong>
+
+                                    <span>
+                                        (64)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Hair Spa
+                                </h3>
+
+
+                                <p>
+                                    Nourishing hair spa service
+                                    for soft and healthy hair.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        60 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹899
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 06 -->
+
+                        <article class="browse-service-card" data-category="skin" data-service="Cleanup Treatment"
+                            data-price="549" data-duration="45">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/service-skin.jpg" alt="Cleanup treatment">
+
+                                <span class="service-category-tag">
+                                    SKIN
+                                </span>
+
+                                <button type="button" class="service-favourite"
+                                    aria-label="Add Cleanup Treatment to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.7
+                                    </strong>
+
+                                    <span>
+                                        (51)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Cleanup Treatment
+                                </h3>
+
+
+                                <p>
+                                    Deep cleansing treatment for
+                                    fresh and refreshed skin.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        45 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹549
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 07 -->
+
+                        <article class="browse-service-card" data-category="nails" data-service="Classic Manicure"
+                            data-price="499" data-duration="45">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/service-nails.jpg" alt="Classic manicure">
+
+                                <span class="service-category-tag">
+                                    NAILS
+                                </span>
+
+                                <button type="button" class="service-favourite"
+                                    aria-label="Add Classic Manicure to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        4.8
+                                    </strong>
+
+                                    <span>
+                                        (69)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Classic Manicure
+                                </h3>
+
+
+                                <p>
+                                    Complete nourish nail care with
+                                    cleaning and finishing.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        45 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹499
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- SERVICE 08 -->
+
+                        <article class="browse-service-card" data-category="bridal" data-service="Bridal Beauty Package"
+                            data-price="3499" data-duration="180">
+
+                            <div class="browse-service-image">
+
+                                <img src="images/service-bridal.jpg" alt="Bridal beauty package">
+
+                                <span class="service-category-tag">
+                                    BRIDAL
+                                </span>
+
+                                <button type="button" class="service-favourite"
+                                    aria-label="Add Bridal Beauty Package to favourites">
+
+                                    <i class="fa-regular fa-heart"></i>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="browse-service-body">
+
+                                <div class="service-rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <strong>
+                                        5.0
+                                    </strong>
+
+                                    <span>
+                                        (42)
+                                    </span>
+
+                                </div>
+
+
+                                <h3>
+                                    Bridal Package
+                                </h3>
+
+
+                                <p>
+                                    Complete beauty prep for
+                                    your special day at home.
+                                </p>
+
+
+                                <div class="service-info-row">
+
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        180 min
+                                    </span>
+
+                                    <strong>
+                                        From ₹3,499
+                                    </strong>
+
+                                </div>
+
+
+                                <button type="button" class="service-book-btn">
+
+                                    Book Now
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- No Results -->
+
+                    <div class="no-services-message" id="noServicesMessage">
+
+                        <div class="no-services-icon">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+
+                        <h3>
+                            No services found
+                        </h3>
+
+                        <p>
+                            Try another service name or choose a different category.
+                        </p>
+
+                        <button type="button" id="resetFilters">
+
+                            Show All Services
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+                     SECTION 04
+                     QUICK BOOKING CTA
+                ========================================== -->
+
+                <section class="browse-booking-section">
+
+                    <div class="browse-booking-card">
+
+                        <div class="browse-booking-icon">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                        </div>
+
+
+                        <div class="browse-booking-content">
+
+                            <span>
+                                READY WHEN YOU ARE
+                            </span>
+
+                            <h2>
+                                Your beauty appointment is
+                                just a few clicks away.
+                            </h2>
+
+                            <p>
+                                Select a service, choose your preferred date
+                                and time, and we'll bring the beauty experience
+                                right to your doorstep.
+                            </p>
+
+                        </div>
+
+
+                        <button type="button" class="browse-booking-btn" id="openBookingBtn">
+
+                            Book a Service
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         QUICK BOOKING MODAL
+    ========================================== -->
+
+    <div class="service-booking-modal" id="serviceBookingModal" aria-hidden="true">
+
+        <div class="service-booking-overlay" id="bookingOverlay"></div>
+
+
+        <div class="service-booking-panel">
+
+            <button type="button" class="booking-modal-close" id="closeBookingModal" aria-label="Close booking">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <span class="booking-modal-eyebrow">
+                QUICK BOOKING
+            </span>
+
+
+            <h2>
+                Book Your Beauty Visit
+            </h2>
+
+
+            <p class="booking-modal-intro">
+                Choose your service, preferred date and convenient time slot.
+            </p>
+
+
+            <form id="quickBookingForm">
+
+
+                <!-- Selected Service -->
+
+                <div class="booking-selected-service">
+
+                    <div class="selected-service-icon">
+
+                        <i class="fa-solid fa-spa"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            SELECTED SERVICE
+                        </span>
+
+                        <strong id="selectedServiceName">
+                            Choose a service
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Service Select -->
+
+                <div class="booking-form-group">
+
+                    <label for="bookingService">
+                        Service
+                    </label>
+
+                    <select id="bookingService" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="Haircut & Styling|499|45">
+                            Haircut & Styling — ₹499
+                        </option>
+
+                        <option value="Glow Facial|799|60">
+                            Glow Facial — ₹799
+                        </option>
+
+                        <option value="Waxing Care|599|40">
+                            Waxing Care — ₹599
+                        </option>
+
+                        <option value="Nail Art|699|50">
+                            Nail Art — ₹699
+                        </option>
+
+                        <option value="Hair Spa|899|60">
+                            Hair Spa — ₹899
+                        </option>
+
+                        <option value="Cleanup Treatment|549|45">
+                            Cleanup Treatment — ₹549
+                        </option>
+
+                        <option value="Classic Manicure|499|45">
+                            Classic Manicure — ₹499
+                        </option>
+
+                        <option value="Bridal Beauty Package|3499|180">
+                            Bridal Beauty Package — ₹3,499
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Date -->
+
+                <div class="booking-form-group">
+
+                    <label for="bookingDate">
+                        Preferred Date
+                    </label>
+
+                    <input type="date" id="bookingDate" required>
+
+                </div>
+
+
+                <!-- Time -->
+
+                <div class="booking-form-group">
+
+                    <label>
+                        Preferred Time Slot
+                    </label>
+
+                    <div class="booking-time-grid">
+
+                        <button type="button" class="time-slot" data-time="09:00 AM">
+
+                            09:00 AM
+
+                        </button>
+
+                        <button type="button" class="time-slot" data-time="10:00 AM">
+
+                            10:00 AM
+
+                        </button>
+
+                        <button type="button" class="time-slot" data-time="12:00 PM">
+
+                            12:00 PM
+
+                        </button>
+
+                        <button type="button" class="time-slot" data-time="02:00 PM">
+
+                            02:00 PM
+
+                        </button>
+
+                        <button type="button" class="time-slot" data-time="04:00 PM">
+
+                            04:00 PM
+
+                        </button>
+
+                        <button type="button" class="time-slot" data-time="06:00 PM">
+
+                            06:00 PM
+
+                        </button>
+
+                    </div>
+
+                    <input type="hidden" id="bookingTime" required>
+
+                </div>
+
+
+                <!-- Booking Summary -->
+
+                <div class="booking-summary">
+
+                    <div>
+
+                        <span>
+                            Service
+                        </span>
+
+                        <strong id="summaryService">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Duration
+                        </span>
+
+                        <strong id="summaryDuration">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Starting Price
+                        </span>
+
+                        <strong id="summaryPrice">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="confirm-booking-btn">
+
+                    Continue Booking
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         BOOKING SUCCESS POPUP
+    ========================================== -->
+
+    <div class="booking-success-popup" id="bookingSuccessPopup" aria-hidden="true">
+
+        <div class="success-popup-card">
+
+            <div class="success-popup-icon">
+
+                <i class="fa-solid fa-check"></i>
+
+            </div>
+
+            <span>
+                SERVICE SELECTED
+            </span>
+
+            <h2>
+                You're Almost Booked!
+            </h2>
+
+            <p id="successMessage">
+                Your selected service is ready for booking.
+            </p>
+
+            <button type="button" id="goToBookingPage">
+
+                Continue to Book
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION MODAL
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-card">
+
+            <button type="button" class="logout-modal-close" id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <span class="logout-modal-label">
+                SIGN OUT
+            </span>
+
+
+            <h2>
+                Are you sure you want to logout?
+            </h2>
+
+
+            <p>
+                You will need to sign in again to access
+                your Beauty Door dashboard.
+            </p>
+
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="cancelLogout">
+
+                    No, Stay
+
+                </button>
+
+
+                <a href="login.html" class="logout-confirm-btn">
+
+                    Yes, Logout
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

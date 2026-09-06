@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="booking-body">
+
+    <!-- =========================================
+         BOOKING PAGE
+    ========================================== -->
+
+    <main class="booking-page">
+
+        <!-- Top Bar -->
+        <div class="booking-topbar">
+
+            <!-- Logo -->
+            <a href="index.html" class="booking-logo">
+                <img src="images/logo.png" alt="Beauty Door">
+            </a>
+
+
+            <!-- Controls -->
+            <div class="booking-controls">
+
+                <button type="button" class="booking-control-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
+                    title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <button type="button" class="booking-control-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL mode"
+                    title="RTL Mode">
+
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Booking Header -->
+        <div class="booking-heading">
+
+            <span class="booking-eyebrow">
+                <span></span>
+                BOOK A SERVICE
+                <span></span>
+            </span>
+
+            <h1>
+                Beauty Care,
+                <span>Booked Your Way.</span>
+            </h1>
+
+            <p>
+                Choose your beauty service, preferred date and time,
+                and we'll bring professional care right to your doorstep.
+            </p>
+
+        </div>
+
+
+        <!-- Booking Card -->
+        <div class="booking-card">
+
+            <form class="booking-form" action="#" method="post">
+
+                <!-- =================================
+                     SERVICE DETAILS
+                ================================== -->
+
+                <div class="booking-form-section">
+
+                    <div class="booking-section-title">
+                        <div class="booking-section-icon">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+
+                        <div>
+                            <span>STEP 01</span>
+                            <h2>Choose Your Service</h2>
+                        </div>
+                    </div>
+
+
+                    <div class="booking-form-grid">
+
+                        <!-- Category -->
+                        <div class="booking-form-group">
+
+                            <label for="service-category">
+                                Service Category
+                            </label>
+
+                            <div class="booking-select-wrap">
+
+                                <i class="fa-solid fa-list"></i>
+
+                                <select id="service-category" name="service_category" required>
+
+                                    <option value="" selected disabled>
+                                        Select a category
+                                    </option>
+
+                                    <option value="hair">
+                                        Hair
+                                    </option>
+
+                                    <option value="skin">
+                                        Skin
+                                    </option>
+
+                                    <option value="nails">
+                                        Nails
+                                    </option>
+
+                                    <option value="bridal">
+                                        Bridal
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Service -->
+                        <div class="booking-form-group">
+
+                            <label for="service">
+                                Select Service
+                            </label>
+
+                            <div class="booking-select-wrap">
+
+                                <i class="fa-solid fa-scissors"></i>
+
+                                <select id="service" name="service" required>
+
+                                    <option value="" selected disabled>
+                                        Choose a service
+                                    </option>
+
+                                    <option value="haircut">
+                                        Haircut & Styling
+                                    </option>
+
+                                    <option value="facial">
+                                        Glow Facial
+                                    </option>
+
+                                    <option value="waxing">
+                                        Waxing Care
+                                    </option>
+
+                                    <option value="nail-art">
+                                        Nail Art
+                                    </option>
+
+                                    <option value="bridal">
+                                        Bridal Beauty
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     DATE & TIME
+                ================================== -->
+
+                <div class="booking-form-section">
+
+                    <div class="booking-section-title">
+
+                        <div class="booking-section-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+
+                        <div>
+                            <span>STEP 02</span>
+                            <h2>Choose Date & Time</h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-form-grid">
+
+                        <!-- Date -->
+                        <div class="booking-form-group">
+
+                            <label for="booking-date">
+                                Preferred Date
+                            </label>
+
+                            <div class="booking-input-wrap">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                <input type="date" id="booking-date" name="booking_date" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Time -->
+                        <div class="booking-form-group">
+
+                            <label for="booking-time">
+                                Preferred Time Slot
+                            </label>
+
+                            <div class="booking-select-wrap">
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <select id="booking-time" name="booking_time" required>
+
+                                    <option value="" selected disabled>
+                                        Select a time slot
+                                    </option>
+
+                                    <option value="09:00">
+                                        09:00 AM – 10:00 AM
+                                    </option>
+
+                                    <option value="10:00">
+                                        10:00 AM – 11:00 AM
+                                    </option>
+
+                                    <option value="11:00">
+                                        11:00 AM – 12:00 PM
+                                    </option>
+
+                                    <option value="12:00">
+                                        12:00 PM – 01:00 PM
+                                    </option>
+
+                                    <option value="14:00">
+                                        02:00 PM – 03:00 PM
+                                    </option>
+
+                                    <option value="15:00">
+                                        03:00 PM – 04:00 PM
+                                    </option>
+
+                                    <option value="16:00">
+                                        04:00 PM – 05:00 PM
+                                    </option>
+
+                                    <option value="17:00">
+                                        05:00 PM – 06:00 PM
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     CUSTOMER DETAILS
+                ================================== -->
+
+                <div class="booking-form-section">
+
+                    <div class="booking-section-title">
+
+                        <div class="booking-section-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div>
+                            <span>STEP 03</span>
+                            <h2>Your Details</h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-form-grid">
+
+                        <!-- Name -->
+                        <div class="booking-form-group">
+
+                            <label for="customer-name">
+                                Full Name
+                            </label>
+
+                            <div class="booking-input-wrap">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input type="text" id="customer-name" name="customer_name"
+                                    placeholder="Enter your full name" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="booking-form-group">
+
+                            <label for="customer-phone">
+                                Phone Number
+                            </label>
+
+                            <div class="booking-input-wrap">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input type="tel" id="customer-phone" name="customer_phone"
+                                    placeholder="Enter your phone number" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="booking-form-group full-width">
+
+                            <label for="customer-email">
+                                Email Address
+                            </label>
+
+                            <div class="booking-input-wrap">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input type="email" id="customer-email" name="customer_email"
+                                    placeholder="Enter your email address" required>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     HOME VISIT DETAILS
+                ================================== -->
+
+                <div class="booking-form-section">
+
+                    <div class="booking-section-title">
+
+                        <div class="booking-section-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <div>
+                            <span>STEP 04</span>
+                            <h2>Home Visit Details</h2>
+                        </div>
+
+                    </div>
+
+
+                    <div class="booking-form-grid">
+
+                        <!-- Address -->
+                        <div class="booking-form-group full-width">
+
+                            <label for="customer-address">
+                                Complete Address
+                            </label>
+
+                            <div class="booking-textarea-wrap">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <textarea id="customer-address" name="customer_address" rows="3"
+                                    placeholder="Enter your complete home address" required></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Landmark -->
+                        <div class="booking-form-group">
+
+                            <label for="landmark">
+                                Landmark
+                            </label>
+
+                            <div class="booking-input-wrap">
+
+                                <i class="fa-solid fa-location-crosshairs"></i>
+
+                                <input type="text" id="landmark" name="landmark" placeholder="Nearby landmark">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Notes -->
+                        <div class="booking-form-group">
+
+                            <label for="booking-notes">
+                                Special Requests
+                            </label>
+
+                            <div class="booking-input-wrap">
+
+                                <i class="fa-regular fa-note-sticky"></i>
+
+                                <input type="text" id="booking-notes" name="booking_notes"
+                                    placeholder="Any special request?">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Booking Note -->
+                <div class="booking-note">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    <p>
+                        Your booking details are kept secure and will only
+                        be used to arrange your Beauty Door home visit.
+                    </p>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit" class="booking-submit-btn">
+
+                    Confirm Booking
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Back Link -->
+        <div class="booking-back">
+
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Beauty Door
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

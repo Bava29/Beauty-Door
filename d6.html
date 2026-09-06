@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     DASHBOARD LAYOUT
+========================================= -->
+
+    <div class="dashboard-layout">
+
+        <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <button type="button" class="sidebar-close-btn" id="sidebarCloseToggle" aria-label="Close sidebar"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Beauty Door">
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Main Menu -->
+                <div class="sidebar-menu-group">
+
+                    <span class="sidebar-menu-title">
+                        MAIN MENU
+                    </span>
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d2.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </span>
+
+                                <span>Browse Services</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d3.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </span>
+
+                                <span>Book a Service</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d4.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+
+                                <span>My Bookings</span>
+
+                                <span class="sidebar-badge">
+                                    2
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d5.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <span>Track My Visit</span>
+
+                                <span class="sidebar-live">
+                                    LIVE
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d6.html" class="sidebar-link active">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                                <span>My Reviews</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d7.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </span>
+
+                                <span>Invoices</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-mobile-tools">
+
+                <div class="sidebar-mobile-quick-actions">
+                    <button type="button" class="header-icon-btn notification-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="notification" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+
+                    <button type="button" class="header-icon-btn settings-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="settings" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+
+                <button type="button" class="header-profile sidebar-mobile-profile" data-mobile-control="profile"
+                    aria-label="Profile">
+                    <span class="header-avatar">
+                        <img src="images/customer-profile.jpg" alt="Ananya">
+                    </span>
+                    <span class="header-profile-info">
+                        <strong>Ananya</strong>
+                        <small>Beauty Member</small>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Sidebar Bottom -->
+            <div class="sidebar-bottom">
+
+                <!-- Logout -->
+                <button type="button" class="sidebar-logout" id="logoutBtn">
+
+                    <span class="logout-icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+        <div class="dashboard-main-area">
+
+
+            <!-- =====================================
+             FIXED HEADER
+        ====================================== -->
+
+            <header class="dashboard-header">
+
+                <!-- Header Left -->
+                <div class="header-left">
+
+                    <button type="button" class="header-menu-toggle" id="sidebarMenuToggle" aria-label="Open sidebar"
+                        aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+                    <span class="header-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1>
+                        My Reviews
+                    </h1>
+
+                </div>
+
+
+                <!-- Header Right -->
+                <div class="header-right">
+
+
+                    <!-- Notifications -->
+                    <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Settings -->
+                    <button type="button" class="header-icon-btn settings-btn" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                        aria-label="Toggle dark mode" title="Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                        title="RTL Mode">
+
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    </button>
+
+
+                    <button type="button" class="header-profile">
+
+                        <span class="header-avatar">
+                            <img src="images/customer-profile.jpg" alt="Ananya">
+                        </span>
+
+                        <span class="header-profile-info">
+
+                            <strong>Ananya</strong>
+
+                            <small>
+                                Beauty Member
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+            <main class="my-reviews-content">
+
+                <!-- =====================================================
+         SECTION 01 — REVIEW OVERVIEW
+    ====================================================== -->
+                <section class="reviews-overview-section">
+
+                    <div class="reviews-page-heading">
+
+                        <div>
+                            <span class="reviews-eyebrow">YOUR BEAUTY FEEDBACK</span>
+
+                            <h2>Share Your Beauty Experience</h2>
+
+                            <p>
+                                Your feedback helps us create better beauty
+                                experiences for you and our community.
+                            </p>
+                        </div>
+
+                        <button type="button" class="write-review-btn" id="openReviewBtn">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            Write a Review
+                        </button>
+
+                    </div>
+
+
+                    <div class="review-overview-layout">
+
+                        <!-- Overall Rating -->
+
+                        <div class="overall-rating-card">
+
+                            <span class="rating-card-label">
+                                OVERALL RATING
+                            </span>
+
+                            <div class="overall-rating-number">
+                                4.8
+                                <small>/ 5</small>
+                            </div>
+
+                            <div class="overall-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <span class="total-review-text">
+                                Based on 8 reviews
+                            </span>
+
+                        </div>
+
+
+                        <!-- Rating Distribution -->
+
+                        <div class="rating-distribution-card">
+
+                            <div class="rating-distribution-heading">
+
+                                <div>
+                                    <span>RATING BREAKDOWN</span>
+                                    <h3>Your Review Summary</h3>
+                                </div>
+
+                                <i class="fa-solid fa-chart-simple"></i>
+
+                            </div>
+
+
+                            <div class="rating-bars">
+
+                                <!-- 5 Star -->
+
+                                <div class="rating-bar-row">
+
+                                    <span class="rating-number">
+                                        5
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <div class="rating-bar">
+                                        <span style="width: 75%;"></span>
+                                    </div>
+
+                                    <strong>6</strong>
+
+                                </div>
+
+
+                                <!-- 4 Star -->
+
+                                <div class="rating-bar-row">
+
+                                    <span class="rating-number">
+                                        4
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <div class="rating-bar">
+                                        <span style="width: 25%;"></span>
+                                    </div>
+
+                                    <strong>2</strong>
+
+                                </div>
+
+
+                                <!-- 3 Star -->
+
+                                <div class="rating-bar-row">
+
+                                    <span class="rating-number">
+                                        3
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <div class="rating-bar">
+                                        <span style="width: 0%;"></span>
+                                    </div>
+
+                                    <strong>0</strong>
+
+                                </div>
+
+
+                                <!-- 2 Star -->
+
+                                <div class="rating-bar-row">
+
+                                    <span class="rating-number">
+                                        2
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <div class="rating-bar">
+                                        <span style="width: 0%;"></span>
+                                    </div>
+
+                                    <strong>0</strong>
+
+                                </div>
+
+
+                                <!-- 1 Star -->
+
+                                <div class="rating-bar-row">
+
+                                    <span class="rating-number">
+                                        1
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+
+                                    <div class="rating-bar">
+                                        <span style="width: 0%;"></span>
+                                    </div>
+
+                                    <strong>0</strong>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Recommendation -->
+
+                        <div class="recommendation-card">
+
+                            <div class="recommendation-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+
+                            <span>RECOMMENDED</span>
+
+                            <strong>96%</strong>
+
+                            <p>
+                                of your feedback recommends
+                                Beauty Door services.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 02 — RATE RECENT VISIT
+    ====================================================== -->
+                <section class="rate-visit-section">
+
+                    <div class="reviews-section-heading">
+
+                        <div>
+                            <span>YOUR RECENT VISIT</span>
+
+                            <h2>How Was Your Experience?</h2>
+
+                            <p>
+                                Tell us about your latest Beauty Door visit.
+                            </p>
+                        </div>
+
+                        <span class="review-step-badge">
+                            FEEDBACK NEEDED
+                        </span>
+
+                    </div>
+
+
+                    <div class="rate-visit-card">
+
+                        <div class="recent-service-info">
+
+                            <div class="recent-service-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+
+                            <div>
+                                <span class="recent-service-category">
+                                    SKIN CARE
+                                </span>
+
+                                <h3>Glow Facial</h3>
+
+                                <p>
+                                    Sep 08, 2026 · Meera · ₹799
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="rating-selector-area">
+
+                            <span class="rating-selector-label">
+                                RATE YOUR VISIT
+                            </span>
+
+                            <div class="interactive-stars" id="recentRating">
+
+                                <button type="button" class="rating-star" data-rating="1" aria-label="1 star">
+                                    <i class="fa-regular fa-star"></i>
+                                </button>
+
+                                <button type="button" class="rating-star" data-rating="2" aria-label="2 stars">
+                                    <i class="fa-regular fa-star"></i>
+                                </button>
+
+                                <button type="button" class="rating-star" data-rating="3" aria-label="3 stars">
+                                    <i class="fa-regular fa-star"></i>
+                                </button>
+
+                                <button type="button" class="rating-star" data-rating="4" aria-label="4 stars">
+                                    <i class="fa-regular fa-star"></i>
+                                </button>
+
+                                <button type="button" class="rating-star" data-rating="5" aria-label="5 stars">
+                                    <i class="fa-regular fa-star"></i>
+                                </button>
+
+                            </div>
+
+                            <span class="rating-selected-text" id="ratingSelectedText">
+                                Select a rating
+                            </span>
+
+                        </div>
+
+
+                        <button type="button" class="review-visit-btn" id="reviewRecentVisitBtn">
+
+                            <i class="fa-regular fa-pen-to-square"></i>
+
+                            Write Your Review
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 03 — YOUR REVIEWS
+    ====================================================== -->
+                <section class="your-reviews-section">
+
+                    <div class="reviews-section-heading">
+
+                        <div>
+                            <span>YOUR FEEDBACK</span>
+
+                            <h2>Your Reviews</h2>
+
+                            <p>
+                                View and manage the feedback you've shared
+                                with Beauty Door.
+                            </p>
+                        </div>
+
+                        <span class="review-total-count" id="reviewTotalCount">
+                            8 Reviews
+                        </span>
+
+                    </div>
+
+
+                    <!-- Review Filters -->
+
+                    <div class="review-filter-bar">
+
+                        <button type="button" class="review-filter-btn active" data-filter="all">
+                            All Reviews
+                        </button>
+
+                        <button type="button" class="review-filter-btn" data-filter="5">
+                            <i class="fa-solid fa-star"></i>
+                            5 Star
+                        </button>
+
+                        <button type="button" class="review-filter-btn" data-filter="4">
+                            <i class="fa-solid fa-star"></i>
+                            4 Star
+                        </button>
+
+                    </div>
+
+
+                    <!-- Reviews List -->
+
+                    <div class="reviews-list" id="reviewsList">
+
+                        <!-- Review 01 -->
+
+                        <article class="review-item" data-rating="5" data-review-id="review-1">
+
+                            <div class="review-service-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+
+                            <div class="review-main-content">
+
+                                <div class="review-top-row">
+
+                                    <div>
+
+                                        <span class="review-service-name">
+                                            Glow Facial
+                                        </span>
+
+                                        <div class="review-rating">
+
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+
+                                    </div>
+
+                                    <span class="review-date">
+                                        Sep 08, 2026
+                                    </span>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    The facial was very relaxing and the service
+                                    was excellent. Meera was professional,
+                                    friendly, and made the whole experience
+                                    really comfortable.
+                                </p>
+
+
+                                <div class="review-bottom-row">
+
+                                    <span class="review-beautician">
+                                        <i class="fa-solid fa-user"></i>
+                                        Meera
+                                    </span>
+
+                                    <div class="review-actions">
+
+                                        <button type="button" class="edit-review-btn" data-review-id="review-1">
+
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            Edit
+
+                                        </button>
+
+                                        <button type="button" class="delete-review-btn" data-review-id="review-1"
+                                            aria-label="Delete review">
+
+                                            <i class="fa-regular fa-trash-can"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Review 02 -->
+
+                        <article class="review-item" data-rating="5" data-review-id="review-2">
+
+                            <div class="review-service-icon">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+
+                            <div class="review-main-content">
+
+                                <div class="review-top-row">
+
+                                    <div>
+
+                                        <span class="review-service-name">
+                                            Haircut & Styling
+                                        </span>
+
+                                        <div class="review-rating">
+
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+
+                                    </div>
+
+                                    <span class="review-date">
+                                        Aug 28, 2026
+                                    </span>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    Loved the styling and professional service.
+                                    The haircut turned out exactly the way
+                                    I wanted.
+                                </p>
+
+
+                                <div class="review-bottom-row">
+
+                                    <span class="review-beautician">
+                                        <i class="fa-solid fa-user"></i>
+                                        Priya
+                                    </span>
+
+                                    <div class="review-actions">
+
+                                        <button type="button" class="edit-review-btn" data-review-id="review-2">
+
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            Edit
+
+                                        </button>
+
+                                        <button type="button" class="delete-review-btn" data-review-id="review-2">
+
+                                            <i class="fa-regular fa-trash-can"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Review 03 -->
+
+                        <article class="review-item" data-rating="4" data-review-id="review-3">
+
+                            <div class="review-service-icon">
+                                <i class="fa-solid fa-hand-sparkles"></i>
+                            </div>
+
+                            <div class="review-main-content">
+
+                                <div class="review-top-row">
+
+                                    <div>
+
+                                        <span class="review-service-name">
+                                            Nail Art
+                                        </span>
+
+                                        <div class="review-rating">
+
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+
+                                        </div>
+
+                                    </div>
+
+                                    <span class="review-date">
+                                        Aug 21, 2026
+                                    </span>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    Beautiful work and arrived on time.
+                                    I really liked the final nail design
+                                    and attention to detail.
+                                </p>
+
+
+                                <div class="review-bottom-row">
+
+                                    <span class="review-beautician">
+                                        <i class="fa-solid fa-user"></i>
+                                        Meera
+                                    </span>
+
+                                    <div class="review-actions">
+
+                                        <button type="button" class="edit-review-btn" data-review-id="review-3">
+
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            Edit
+
+                                        </button>
+
+                                        <button type="button" class="delete-review-btn" data-review-id="review-3">
+
+                                            <i class="fa-regular fa-trash-can"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Review 04 -->
+
+                        <article class="review-item" data-rating="5" data-review-id="review-4">
+
+                            <div class="review-service-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+
+                            <div class="review-main-content">
+
+                                <div class="review-top-row">
+
+                                    <div>
+
+                                        <span class="review-service-name">
+                                            Hair Spa
+                                        </span>
+
+                                        <div class="review-rating">
+
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+
+                                        </div>
+
+                                    </div>
+
+                                    <span class="review-date">
+                                        Aug 14, 2026
+                                    </span>
+
+                                </div>
+
+
+                                <p class="review-text">
+                                    My hair feels so much healthier after the
+                                    treatment. The service was smooth,
+                                    professional, and worth every rupee.
+                                </p>
+
+
+                                <div class="review-bottom-row">
+
+                                    <span class="review-beautician">
+                                        <i class="fa-solid fa-user"></i>
+                                        Priya
+                                    </span>
+
+                                    <div class="review-actions">
+
+                                        <button type="button" class="edit-review-btn" data-review-id="review-4">
+
+                                            <i class="fa-regular fa-pen-to-square"></i>
+                                            Edit
+
+                                        </button>
+
+                                        <button type="button" class="delete-review-btn" data-review-id="review-4">
+
+                                            <i class="fa-regular fa-trash-can"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                    <!-- Empty State -->
+
+                    <div class="reviews-empty-state" id="reviewsEmptyState">
+
+                        <div class="empty-review-icon">
+                            <i class="fa-regular fa-comment"></i>
+                        </div>
+
+                        <h3>No Reviews Found</h3>
+
+                        <p>
+                            There are no reviews matching the selected filter.
+                        </p>
+
+                        <button type="button" id="resetReviewFilter">
+                            View All Reviews
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 04 — SHARE YOUR EXPERIENCE
+    ====================================================== -->
+                <section class="share-experience-section">
+
+                    <div class="share-experience-card">
+
+                        <div class="share-experience-content">
+
+                            <span class="share-eyebrow">
+                                YOUR VOICE MATTERS
+                            </span>
+
+                            <h2>
+                                Your Feedback Helps Us Grow
+                            </h2>
+
+                            <p>
+                                Every honest review helps us maintain great
+                                service and helps other customers choose
+                                the right beauty experience.
+                            </p>
+
+
+                            <div class="feedback-points">
+
+                                <span>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    Honest Feedback
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    Verified Visits
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    Better Beauty Experiences
+                                </span>
+
+                            </div>
+
+
+                            <div class="share-experience-actions">
+
+                                <button type="button" class="share-write-btn" id="shareWriteReviewBtn">
+
+                                    <i class="fa-regular fa-pen-to-square"></i>
+                                    Write a Review
+
+                                </button>
+
+                                <a href="d2.html" class="share-browse-btn">
+
+                                    Browse Services
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="share-experience-art">
+
+                            <div class="share-art-circle">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+
+                            <span class="share-art-badge">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION MODAL
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-card">
+
+            <button type="button" class="logout-modal-close" id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <span class="logout-modal-label">
+                SIGN OUT
+            </span>
+
+
+            <h2>
+                Are you sure you want to logout?
+            </h2>
+
+
+            <p>
+                You will need to sign in again to access
+                your Beauty Door dashboard.
+            </p>
+
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="cancelLogout">
+
+                    No, Stay
+
+                </button>
+
+
+                <a href="login.html" class="logout-confirm-btn">
+
+                    Yes, Logout
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

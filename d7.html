@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     DASHBOARD LAYOUT
+========================================= -->
+
+    <div class="dashboard-layout">
+
+        <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <button type="button" class="sidebar-close-btn" id="sidebarCloseToggle" aria-label="Close sidebar"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Beauty Door">
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Main Menu -->
+                <div class="sidebar-menu-group">
+
+                    <span class="sidebar-menu-title">
+                        MAIN MENU
+                    </span>
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d2.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </span>
+
+                                <span>Browse Services</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d3.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </span>
+
+                                <span>Book a Service</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d4.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+
+                                <span>My Bookings</span>
+
+                                <span class="sidebar-badge">
+                                    2
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d5.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <span>Track My Visit</span>
+
+                                <span class="sidebar-live">
+                                    LIVE
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d6.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                                <span>My Reviews</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d7.html" class="sidebar-link active">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </span>
+
+                                <span>Invoices</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-mobile-tools">
+
+                <div class="sidebar-mobile-quick-actions">
+                    <button type="button" class="header-icon-btn notification-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="notification" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+
+                    <button type="button" class="header-icon-btn settings-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="settings" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+
+                <button type="button" class="header-profile sidebar-mobile-profile" data-mobile-control="profile"
+                    aria-label="Profile">
+                    <span class="header-avatar">
+                        <img src="images/customer-profile.jpg" alt="Ananya">
+                    </span>
+                    <span class="header-profile-info">
+                        <strong>Ananya</strong>
+                        <small>Beauty Member</small>
+                    </span>
+                </button>
+            </div>
+
+
+            <div class="sidebar-bottom">
+
+                <!-- Logout -->
+                <button type="button" class="sidebar-logout" id="logoutBtn">
+
+                    <span class="logout-icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+        <div class="dashboard-main-area">
+
+
+            <!-- =====================================
+             FIXED HEADER
+        ====================================== -->
+
+            <header class="dashboard-header">
+
+                <!-- Header Left -->
+                <div class="header-left">
+
+                    <button type="button" class="header-menu-toggle" id="sidebarMenuToggle" aria-label="Open sidebar"
+                        aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+                    <span class="header-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1>
+                        Your Invoices
+                    </h1>
+
+                </div>
+
+
+                <!-- Header Right -->
+                <div class="header-right">
+
+
+                    <!-- Notifications -->
+                    <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Settings -->
+                    <button type="button" class="header-icon-btn settings-btn" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                        aria-label="Toggle dark mode" title="Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                        title="RTL Mode">
+
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    </button>
+
+
+                    <button type="button" class="header-profile">
+
+                        <span class="header-avatar">
+                            <img src="images/customer-profile.jpg" alt="Ananya">
+                        </span>
+
+                        <span class="header-profile-info">
+
+                            <strong>Ananya</strong>
+
+                            <small>
+                                Beauty Member
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+            <main class="invoices-content">
+
+                <!-- =====================================================
+         SECTION 01 — INVOICE OVERVIEW
+    ====================================================== -->
+                <section class="invoice-overview-section">
+
+                    <div class="invoices-page-heading">
+
+                        <div>
+                            <span class="invoices-eyebrow">
+                                PAYMENT OVERVIEW
+                            </span>
+
+                            <h2>
+                                Your Invoices
+                            </h2>
+
+                            <p>
+                                Keep track of your Beauty Door payments,
+                                invoices, and billing history in one place.
+                            </p>
+                        </div>
+
+                        <button type="button" class="invoice-statement-btn" id="downloadStatementBtn">
+
+                            <i class="fa-solid fa-download"></i>
+                            Download Statement
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Invoice Stats -->
+
+                    <div class="invoice-stat-grid">
+
+                        <!-- Total -->
+
+                        <div class="invoice-stat-card">
+
+                            <div class="invoice-stat-icon">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+
+                            <div class="invoice-stat-content">
+
+                                <span>
+                                    TOTAL INVOICES
+                                </span>
+
+                                <strong id="totalInvoiceCount">
+                                    10
+                                </strong>
+
+                                <small>
+                                    All billing records
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Paid -->
+
+                        <div class="invoice-stat-card">
+
+                            <div class="invoice-stat-icon paid">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+
+                            <div class="invoice-stat-content">
+
+                                <span>
+                                    PAID INVOICES
+                                </span>
+
+                                <strong id="paidInvoiceCount">
+                                    8
+                                </strong>
+
+                                <small>
+                                    Completed
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Pending -->
+
+                        <div class="invoice-stat-card">
+
+                            <div class="invoice-stat-icon pending">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+
+                            <div class="invoice-stat-content">
+
+                                <span>
+                                    PENDING
+                                </span>
+
+                                <strong id="pendingInvoiceCount">
+                                    1
+                                </strong>
+
+                                <small>
+                                    Awaiting payment
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Total Spent -->
+
+                        <div class="invoice-stat-card">
+
+                            <div class="invoice-stat-icon spent">
+                                <i class="fa-solid fa-indian-rupee-sign"></i>
+                            </div>
+
+                            <div class="invoice-stat-content">
+
+                                <span>
+                                    TOTAL SPENT
+                                </span>
+
+                                <strong id="totalSpent">
+                                    ₹7,490
+                                </strong>
+
+                                <small>
+                                    Across all services
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 02 — RECENT INVOICES
+    ====================================================== -->
+                <section class="recent-invoices-section">
+
+                    <div class="invoices-section-heading">
+
+                        <div>
+
+                            <span>
+                                BILLING HISTORY
+                            </span>
+
+                            <h2>
+                                Recent Invoices
+                            </h2>
+
+                            <p>
+                                View, manage, and download your recent
+                                Beauty Door invoices.
+                            </p>
+
+                        </div>
+
+                        <span class="invoice-result-count" id="invoiceResultCount">
+
+                            5 Invoices
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- Invoice Toolbar -->
+
+                    <div class="invoice-toolbar">
+
+                        <!-- Search -->
+
+                        <div class="invoice-search">
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                            <input type="text" id="invoiceSearch" placeholder="Search invoice or service..."
+                                aria-label="Search invoices">
+
+                            <button type="button" id="clearInvoiceSearch" class="clear-invoice-search"
+                                aria-label="Clear search">
+
+                                <i class="fa-solid fa-xmark"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Filters -->
+
+                        <div class="invoice-filters">
+
+                            <button type="button" class="invoice-filter-btn active" data-filter="all">
+
+                                All
+
+                            </button>
+
+                            <button type="button" class="invoice-filter-btn" data-filter="paid">
+
+                                <i class="fa-solid fa-circle-check"></i>
+                                Paid
+
+                            </button>
+
+                            <button type="button" class="invoice-filter-btn" data-filter="pending">
+
+                                <i class="fa-regular fa-clock"></i>
+                                Pending
+
+                            </button>
+
+                            <button type="button" class="invoice-filter-btn" data-filter="refunded">
+
+                                <i class="fa-solid fa-rotate-left"></i>
+                                Refunded
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Invoice List -->
+
+                    <div class="invoice-table-wrapper">
+
+                        <div class="invoice-table">
+
+                            <!-- Table Header -->
+
+                            <div class="invoice-table-header">
+
+                                <span>
+                                    INVOICE
+                                </span>
+
+                                <span>
+                                    SERVICE
+                                </span>
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <span>
+                                    AMOUNT
+                                </span>
+
+                                <span>
+                                    STATUS
+                                </span>
+
+                                <span>
+                                    ACTION
+                                </span>
+
+                            </div>
+
+
+                            <!-- Invoice 01 -->
+
+                            <article class="invoice-row" data-status="paid" data-invoice="INV-2026-008"
+                                data-service="Glow Facial" data-date="Sep 08, 2026" data-amount="799"
+                                data-beautician="Meera" data-duration="60 minutes">
+
+                                <div class="invoice-number">
+
+                                    <div class="invoice-row-icon">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>
+                                            INV-2026-008
+                                        </strong>
+
+                                        <small>
+                                            Beauty Door
+                                        </small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="invoice-service">
+
+                                    <strong>
+                                        Glow Facial
+                                    </strong>
+
+                                    <small>
+                                        Skin Care · Meera
+                                    </small>
+
+                                </div>
+
+
+                                <div class="invoice-date">
+                                    Sep 08, 2026
+                                </div>
+
+
+                                <div class="invoice-amount">
+                                    ₹799
+                                </div>
+
+
+                                <div>
+                                    <span class="invoice-status paid">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Paid
+                                    </span>
+                                </div>
+
+
+                                <div class="invoice-action">
+
+                                    <button type="button" class="view-invoice-btn" data-invoice="INV-2026-008">
+
+                                        View
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Invoice 02 -->
+
+                            <article class="invoice-row" data-status="paid" data-invoice="INV-2026-007"
+                                data-service="Haircut & Styling" data-date="Aug 28, 2026" data-amount="499"
+                                data-beautician="Priya" data-duration="45 minutes">
+
+                                <div class="invoice-number">
+
+                                    <div class="invoice-row-icon">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>
+                                            INV-2026-007
+                                        </strong>
+
+                                        <small>
+                                            Beauty Door
+                                        </small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="invoice-service">
+
+                                    <strong>
+                                        Haircut & Styling
+                                    </strong>
+
+                                    <small>
+                                        Hair Care · Priya
+                                    </small>
+
+                                </div>
+
+
+                                <div class="invoice-date">
+                                    Aug 28, 2026
+                                </div>
+
+
+                                <div class="invoice-amount">
+                                    ₹499
+                                </div>
+
+
+                                <div>
+                                    <span class="invoice-status paid">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Paid
+                                    </span>
+                                </div>
+
+
+                                <div class="invoice-action">
+
+                                    <button type="button" class="view-invoice-btn" data-invoice="INV-2026-007">
+
+                                        View
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Invoice 03 -->
+
+                            <article class="invoice-row" data-status="paid" data-invoice="INV-2026-006"
+                                data-service="Nail Art" data-date="Aug 21, 2026" data-amount="699"
+                                data-beautician="Meera" data-duration="60 minutes">
+
+                                <div class="invoice-number">
+
+                                    <div class="invoice-row-icon">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>
+                                            INV-2026-006
+                                        </strong>
+
+                                        <small>
+                                            Beauty Door
+                                        </small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="invoice-service">
+
+                                    <strong>
+                                        Nail Art
+                                    </strong>
+
+                                    <small>
+                                        Nail Care · Meera
+                                    </small>
+
+                                </div>
+
+
+                                <div class="invoice-date">
+                                    Aug 21, 2026
+                                </div>
+
+
+                                <div class="invoice-amount">
+                                    ₹699
+                                </div>
+
+
+                                <div>
+                                    <span class="invoice-status paid">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Paid
+                                    </span>
+                                </div>
+
+
+                                <div class="invoice-action">
+
+                                    <button type="button" class="view-invoice-btn" data-invoice="INV-2026-006">
+
+                                        View
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Invoice 04 -->
+
+                            <article class="invoice-row" data-status="paid" data-invoice="INV-2026-005"
+                                data-service="Hair Spa" data-date="Aug 14, 2026" data-amount="899"
+                                data-beautician="Priya" data-duration="75 minutes">
+
+                                <div class="invoice-number">
+
+                                    <div class="invoice-row-icon">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>
+                                            INV-2026-005
+                                        </strong>
+
+                                        <small>
+                                            Beauty Door
+                                        </small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="invoice-service">
+
+                                    <strong>
+                                        Hair Spa
+                                    </strong>
+
+                                    <small>
+                                        Hair Care · Priya
+                                    </small>
+
+                                </div>
+
+
+                                <div class="invoice-date">
+                                    Aug 14, 2026
+                                </div>
+
+
+                                <div class="invoice-amount">
+                                    ₹899
+                                </div>
+
+
+                                <div>
+                                    <span class="invoice-status paid">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Paid
+                                    </span>
+                                </div>
+
+
+                                <div class="invoice-action">
+
+                                    <button type="button" class="view-invoice-btn" data-invoice="INV-2026-005">
+
+                                        View
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- Invoice 05 -->
+
+                            <article class="invoice-row" data-status="refunded" data-invoice="INV-2026-004"
+                                data-service="Waxing Care" data-date="Aug 05, 2026" data-amount="599"
+                                data-beautician="Anu" data-duration="45 minutes">
+
+                                <div class="invoice-number">
+
+                                    <div class="invoice-row-icon">
+                                        <i class="fa-solid fa-file-invoice"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>
+                                            INV-2026-004
+                                        </strong>
+
+                                        <small>
+                                            Beauty Door
+                                        </small>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="invoice-service">
+
+                                    <strong>
+                                        Waxing Care
+                                    </strong>
+
+                                    <small>
+                                        Skin Care · Anu
+                                    </small>
+
+                                </div>
+
+
+                                <div class="invoice-date">
+                                    Aug 05, 2026
+                                </div>
+
+
+                                <div class="invoice-amount">
+                                    ₹599
+                                </div>
+
+
+                                <div>
+                                    <span class="invoice-status refunded">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        Refunded
+                                    </span>
+                                </div>
+
+
+                                <div class="invoice-action">
+
+                                    <button type="button" class="view-invoice-btn" data-invoice="INV-2026-004">
+
+                                        View
+                                        <i class="fa-solid fa-arrow-right"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Empty State -->
+
+                    <div class="invoice-empty-state" id="invoiceEmptyState">
+
+                        <div class="invoice-empty-icon">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+
+                        <h3>
+                            No Invoices Found
+                        </h3>
+
+                        <p>
+                            No invoices match your current search or filter.
+                        </p>
+
+                        <button type="button" id="resetInvoiceFilters">
+
+                            View All Invoices
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =====================================================
+         SECTION 03 — PAYMENT & BILLING
+    ====================================================== -->
+                <section class="payment-billing-section">
+
+                    <div class="payment-billing-card">
+
+                        <div class="billing-information">
+
+                            <span class="billing-eyebrow">
+                                PAYMENT DETAILS
+                            </span>
+
+                            <h2>
+                                Payment & Billing
+                            </h2>
+
+                            <p>
+                                Your recent payment information and billing
+                                status are summarized below.
+                            </p>
+
+
+                            <div class="billing-details-grid">
+
+                                <div class="billing-detail-item">
+
+                                    <div class="billing-detail-icon">
+                                        <i class="fa-solid fa-wallet"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            PREFERRED PAYMENT
+                                        </span>
+
+                                        <strong>
+                                            UPI
+                                        </strong>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="billing-detail-item">
+
+                                    <div class="billing-detail-icon">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            LAST PAYMENT
+                                        </span>
+
+                                        <strong>
+                                            Aug 28, 2026
+                                        </strong>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="billing-detail-item">
+
+                                    <div class="billing-detail-icon">
+                                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            OUTSTANDING AMOUNT
+                                        </span>
+
+                                        <strong>
+                                            ₹0
+                                        </strong>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="billing-detail-item">
+
+                                    <div class="billing-detail-icon">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+
+                                    <div>
+                                        <span>
+                                            PAYMENT STATUS
+                                        </span>
+
+                                        <strong class="billing-clear">
+                                            All Clear
+                                        </strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Support -->
+
+                        <div class="invoice-support-card">
+
+                            <div class="invoice-support-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+
+                            <span>
+                                NEED HELP?
+                            </span>
+
+                            <h3>
+                                Questions About Your Invoice?
+                            </h3>
+
+                            <p>
+                                Have a question about a payment, invoice,
+                                or refund? Our support team is ready to help.
+                            </p>
+
+
+                            <div class="invoice-support-actions">
+
+                                <button type="button" class="invoice-support-btn" id="invoiceSupportBtn">
+
+                                    <i class="fa-solid fa-headset"></i>
+                                    Contact Support
+
+                                </button>
+
+                                <a href="d4.html" class="invoice-bookings-btn">
+
+                                    View My Bookings
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     VIEW INVOICE POPUP
+====================================================== -->
+
+    <div class="invoice-popup-overlay" id="invoicePopup" aria-hidden="true">
+
+        <div class="invoice-popup-card" role="dialog" aria-modal="true" aria-labelledby="invoicePopupTitle">
+
+            <button type="button" class="invoice-popup-close" id="closeInvoicePopup" aria-label="Close invoice">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="invoice-popup-header">
+
+                <div class="invoice-popup-icon">
+                    <i class="fa-solid fa-file-invoice"></i>
+                </div>
+
+                <div>
+
+                    <span>
+                        BEAUTY DOOR INVOICE
+                    </span>
+
+                    <h3 id="invoicePopupTitle">
+                        INV-2026-008
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="invoice-popup-status">
+                <i class="fa-solid fa-circle-check"></i>
+                Payment Completed
+            </div>
+
+
+            <div class="invoice-popup-service">
+
+                <div>
+                    <span>
+                        SERVICE
+                    </span>
+
+                    <strong id="popupInvoiceService">
+                        Glow Facial
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        AMOUNT
+                    </span>
+
+                    <strong id="popupInvoiceAmount">
+                        ₹799
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="invoice-popup-details">
+
+                <div>
+                    <span>
+                        VISIT DATE
+                    </span>
+
+                    <strong id="popupInvoiceDate">
+                        Sep 08, 2026
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        DURATION
+                    </span>
+
+                    <strong id="popupInvoiceDuration">
+                        60 minutes
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        BEAUTICIAN
+                    </span>
+
+                    <strong id="popupInvoiceBeautician">
+                        Meera
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        PAYMENT METHOD
+                    </span>
+
+                    <strong>
+                        UPI
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="invoice-popup-total">
+
+                <span>
+                    TOTAL PAID
+                </span>
+
+                <strong id="popupInvoiceTotal">
+                    ₹799
+                </strong>
+
+            </div>
+
+
+            <button type="button" class="invoice-download-btn" id="downloadInvoiceBtn">
+
+                <i class="fa-solid fa-download"></i>
+                Download Invoice
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+     SUPPORT POPUP
+====================================================== -->
+
+    <div class="invoice-popup-overlay" id="invoiceSupportPopup" aria-hidden="true">
+
+        <div class="invoice-popup-card invoice-support-popup">
+
+            <button type="button" class="invoice-popup-close" id="closeInvoiceSupportPopup" aria-label="Close">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="invoice-popup-icon">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <span class="invoice-popup-eyebrow">
+                BILLING SUPPORT
+            </span>
+
+            <h3>
+                How Can We Help?
+            </h3>
+
+            <p>
+                Our support team can help you with invoices,
+                payments, refunds, and billing questions.
+            </p>
+
+
+            <div class="support-contact-options">
+
+                <a href="mailto:support@beautydoor.com">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <span>
+                        <small>Email Support</small>
+                        support@beautydoor.com
+                    </span>
+
+                </a>
+
+
+                <a href="tel:+919876543210">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>
+                        <small>Call Support</small>
+                        +91 98765 43210
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION MODAL
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-card">
+
+            <button type="button" class="logout-modal-close" id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <span class="logout-modal-label">
+                SIGN OUT
+            </span>
+
+
+            <h2>
+                Are you sure you want to logout?
+            </h2>
+
+
+            <p>
+                You will need to sign in again to access
+                your Beauty Door dashboard.
+            </p>
+
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="cancelLogout">
+
+                    No, Stay
+
+                </button>
+
+
+                <a href="login.html" class="logout-confirm-btn">
+
+                    Yes, Logout
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

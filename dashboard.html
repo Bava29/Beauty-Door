@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     DASHBOARD LAYOUT
+========================================= -->
+
+    <div class="dashboard-layout">
+
+        <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <button type="button" class="sidebar-close-btn" id="sidebarCloseToggle" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="sidebar-logo">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Beauty Door">
+                </a>
+
+            </div>
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Main Menu -->
+                <div class="sidebar-menu-group">
+
+                    <span class="sidebar-menu-title">
+                        MAIN MENU
+                    </span>
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html" class="sidebar-link active">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d2.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </span>
+
+                                <span>Browse Services</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d3.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </span>
+
+                                <span>Book a Service</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d4.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+
+                                <span>My Bookings</span>
+
+                                <span class="sidebar-badge">
+                                    2
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d5.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <span>Track My Visit</span>
+
+                                <span class="sidebar-live">
+                                    LIVE
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d6.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                                <span>My Reviews</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d7.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </span>
+
+                                <span>Invoices</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-mobile-tools">
+
+                <div class="sidebar-mobile-quick-actions">
+                    <button type="button" class="header-icon-btn notification-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="notification" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+
+                    <button type="button" class="header-icon-btn settings-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="settings" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+
+                <button type="button" class="header-profile sidebar-mobile-profile" data-mobile-control="profile"
+                    aria-label="Profile">
+                    <span class="header-avatar">
+                        <img src="images/customer-profile.jpg" alt="Ananya">
+                    </span>
+                    <span class="header-profile-info">
+                        <strong>Ananya</strong>
+                        <small>Beauty Member</small>
+                    </span>
+                </button>
+            </div>
+
+
+            <!-- Sidebar Bottom -->
+            <div class="sidebar-bottom">
+
+                <!-- Logout -->
+                <button type="button" class="sidebar-logout" id="logoutBtn">
+
+                    <span class="logout-icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+        <div class="dashboard-main-area">
+
+
+            <!-- =====================================
+             FIXED HEADER
+        ====================================== -->
+
+            <header class="dashboard-header">
+
+                <!-- Header Left -->
+                <div class="header-left">
+
+                    <button type="button" class="header-menu-toggle" id="sidebarMenuToggle" aria-label="Open sidebar"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <span class="header-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1>
+                        Welcome Back, Ananya
+                    </h1>
+
+                </div>
+
+
+                <!-- Header Right -->
+                <div class="header-right">
+
+
+                    <!-- Notifications -->
+                    <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Settings -->
+                    <button type="button" class="header-icon-btn settings-btn" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                        aria-label="Toggle dark mode" title="Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                        title="RTL Mode">
+
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    </button>
+
+
+                    <button type="button" class="header-profile">
+
+                        <span class="header-avatar">
+                            <img src="images/customer-profile.jpg" alt="Ananya">
+                        </span>
+
+                        <span class="header-profile-info">
+
+                            <strong>Ananya</strong>
+
+                            <small>
+                                Beauty Member
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+            <main class="dashboard-content">
+
+                <!-- =========================================
+         SECTION 01 — WELCOME OVERVIEW
+    ========================================== -->
+
+                <section class="dashboard-overview-section">
+
+                    <div class="overview-welcome-card">
+
+                        <div class="overview-welcome-content">
+
+                            <span class="overview-eyebrow">
+                                YOUR BEAUTY JOURNEY
+                            </span>
+
+                            <h2>
+                                Feel beautiful,
+                                <strong>right at home.</strong>
+                            </h2>
+
+                            <p>
+                                Welcome back, Ananya. Discover your favourite beauty
+                                treatments and enjoy professional salon care without
+                                leaving your home.
+                            </p>
+
+                            <a href="book-service.html" class="overview-book-btn">
+                                Book a Service
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="overview-welcome-art">
+
+                            <div class="welcome-art-circle">
+
+                                <i class="fa-solid fa-spa"></i>
+
+                            </div>
+
+                            <div class="welcome-art-small">
+
+                                <i class="fa-solid fa-heart"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Overview Stats -->
+
+                    <div class="overview-stat-grid">
+
+                        <div class="overview-stat-card">
+
+                            <div class="overview-stat-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <div>
+
+                                <span>UPCOMING</span>
+
+                                <strong>01</strong>
+
+                                <p>Next appointment</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="overview-stat-card">
+
+                            <div class="overview-stat-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+
+                            <div>
+
+                                <span>COMPLETED</span>
+
+                                <strong>08</strong>
+
+                                <p>Visits completed</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="overview-stat-card">
+
+                            <div class="overview-stat-icon">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <div>
+
+                                <span>YOUR RATING</span>
+
+                                <strong>4.9</strong>
+
+                                <p>Average service rating</p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="overview-stat-card">
+
+                            <div class="overview-stat-icon">
+                                <i class="fa-solid fa-file-invoice"></i>
+                            </div>
+
+                            <div>
+
+                                <span>INVOICES</span>
+
+                                <strong>08</strong>
+
+                                <p>Payment records</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+         SECTION 02 — UPCOMING BOOKING
+    ========================================== -->
+
+                <section class="upcoming-booking-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span>YOUR NEXT VISIT</span>
+
+                            <h2>Upcoming Booking</h2>
+
+                        </div>
+
+                        <a href="d4.html" class="dashboard-view-link">
+
+                            View All Bookings
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="upcoming-booking-card">
+
+                        <!-- Date -->
+
+                        <div class="upcoming-date-card">
+
+                            <span>SEP</span>
+
+                            <strong>08</strong>
+
+                            <small>2026</small>
+
+                        </div>
+
+
+                        <!-- Service -->
+
+                        <div class="upcoming-service">
+
+                            <div class="upcoming-service-icon">
+
+                                <i class="fa-solid fa-spa"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>SKIN CARE</span>
+
+                                <h3>Glow Facial</h3>
+
+                                <p>
+                                    Professional facial treatment
+                                    at your doorstep.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Time -->
+
+                        <div class="upcoming-detail">
+
+                            <span>TIME</span>
+
+                            <strong>
+                                <i class="fa-regular fa-clock"></i>
+                                10:00 AM
+                            </strong>
+
+                            <small>
+                                60 minutes
+                            </small>
+
+                        </div>
+
+
+                        <!-- Professional -->
+
+                        <div class="upcoming-detail">
+
+                            <span>BEAUTY PROFESSIONAL</span>
+
+                            <strong>
+                                <i class="fa-regular fa-user"></i>
+                                Meera
+                            </strong>
+
+                            <small>
+                                Skin Care Expert
+                            </small>
+
+                        </div>
+
+
+                        <!-- Status -->
+
+                        <div class="upcoming-status">
+
+                            <span class="booking-confirmed">
+                                <i class="fa-solid fa-check"></i>
+                                Confirmed
+                            </span>
+
+                            <a href="d5.html" class="track-visit-btn">
+
+                                Track Visit
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+         SECTION 03 — QUICK SERVICE CATEGORIES
+    ========================================== -->
+
+                <section class="dashboard-services-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span>EXPLORE BEAUTY</span>
+
+                            <h2>What Are You Looking For?</h2>
+
+                        </div>
+
+                        <a href="d2.html" class="dashboard-view-link">
+
+                            View All Services
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="dashboard-category-grid">
+
+
+                        <!-- Hair -->
+
+                        <a href="services.html#hair" class="dashboard-category-card">
+
+                            <div class="category-image">
+
+                                <img src="images/service-hair.jpg" alt="Hair beauty services">
+
+                                <span class="category-number">
+                                    01
+                                </span>
+
+                            </div>
+
+                            <div class="category-content">
+
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>Hair</h3>
+
+                                    <p>
+                                        Haircuts, styling & care
+                                    </p>
+
+                                </div>
+
+                                <span class="category-arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- Skin -->
+
+                        <a href="services.html#skin" class="dashboard-category-card">
+
+                            <div class="category-image">
+
+                                <img src="images/service-skin.jpg" alt="Skin beauty services">
+
+                                <span class="category-number">
+                                    02
+                                </span>
+
+                            </div>
+
+                            <div class="category-content">
+
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-spa"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>Skin</h3>
+
+                                    <p>
+                                        Facials & skin treatments
+                                    </p>
+
+                                </div>
+
+                                <span class="category-arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- Nails -->
+
+                        <a href="services.html#nails" class="dashboard-category-card">
+
+                            <div class="category-image">
+
+                                <img src="images/service-nails.jpg" alt="Nail beauty services">
+
+                                <span class="category-number">
+                                    03
+                                </span>
+
+                            </div>
+
+                            <div class="category-content">
+
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-hand-sparkles"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>Nails</h3>
+
+                                    <p>
+                                        Manicure & nail art
+                                    </p>
+
+                                </div>
+
+                                <span class="category-arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+
+                        </a>
+
+
+                        <!-- Bridal -->
+
+                        <a href="services.html#bridal" class="dashboard-category-card">
+
+                            <div class="category-image">
+
+                                <img src="images/service-bridal.jpg" alt="Bridal beauty services">
+
+                                <span class="category-number">
+                                    04
+                                </span>
+
+                            </div>
+
+                            <div class="category-content">
+
+                                <div class="category-icon">
+                                    <i class="fa-solid fa-crown"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>Bridal</h3>
+
+                                    <p>
+                                        Complete bridal beauty
+                                    </p>
+
+                                </div>
+
+                                <span class="category-arrow">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+         SECTION 04 — RECENT BOOKINGS
+    ========================================== -->
+
+                <section class="recent-bookings-section">
+
+                    <div class="dashboard-section-heading">
+
+                        <div>
+
+                            <span>YOUR ACTIVITY</span>
+
+                            <h2>Recent Bookings</h2>
+
+                        </div>
+
+                        <a href="d4.html" class="dashboard-view-link">
+
+                            View Booking History
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="recent-bookings-card">
+
+                        <!-- Table Header -->
+
+                        <div class="recent-bookings-header">
+
+                            <span>SERVICE</span>
+                            <span>DATE</span>
+                            <span>PROFESSIONAL</span>
+                            <span>STATUS</span>
+                            <span>AMOUNT</span>
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- Booking 01 -->
+
+                        <div class="recent-booking-row">
+
+                            <div class="recent-service">
+
+                                <div class="recent-service-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Haircut & Styling
+                                    </strong>
+
+                                    <span>
+                                        Hair
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span>
+                                Aug 21, 2026
+                            </span>
+
+
+                            <span>
+                                Ananya
+                            </span>
+
+
+                            <span class="recent-status completed">
+                                Completed
+                            </span>
+
+
+                            <strong>
+                                ₹499
+                            </strong>
+
+
+                            <a href="d7.html" class="recent-action" title="View Invoice">
+
+                                <i class="fa-solid fa-file-invoice"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- Booking 02 -->
+
+                        <div class="recent-booking-row">
+
+                            <div class="recent-service">
+
+                                <div class="recent-service-icon">
+                                    <i class="fa-solid fa-hand-sparkles"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Nail Art
+                                    </strong>
+
+                                    <span>
+                                        Nails
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span>
+                                Aug 05, 2026
+                            </span>
+
+
+                            <span>
+                                Riya
+                            </span>
+
+
+                            <span class="recent-status completed">
+                                Completed
+                            </span>
+
+
+                            <strong>
+                                ₹699
+                            </strong>
+
+
+                            <a href="d7.html" class="recent-action" title="View Invoice">
+
+                                <i class="fa-solid fa-file-invoice"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- Booking 03 -->
+
+                        <div class="recent-booking-row">
+
+                            <div class="recent-service">
+
+                                <div class="recent-service-icon">
+                                    <i class="fa-solid fa-spa"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Glow Facial
+                                    </strong>
+
+                                    <span>
+                                        Skin
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span>
+                                Jul 14, 2026
+                            </span>
+
+
+                            <span>
+                                Meera
+                            </span>
+
+
+                            <span class="recent-status completed">
+                                Completed
+                            </span>
+
+
+                            <strong>
+                                ₹799
+                            </strong>
+
+
+                            <a href="d7.html" class="recent-action" title="View Invoice">
+
+                                <i class="fa-solid fa-file-invoice"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <!-- Booking 04 -->
+
+                        <div class="recent-booking-row">
+
+                            <div class="recent-service">
+
+                                <div class="recent-service-icon">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Waxing Care
+                                    </strong>
+
+                                    <span>
+                                        Skin
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <span>
+                                Jun 08, 2026
+                            </span>
+
+
+                            <span>
+                                Priya
+                            </span>
+
+
+                            <span class="recent-status completed">
+                                Completed
+                            </span>
+
+
+                            <strong>
+                                ₹599
+                            </strong>
+
+
+                            <a href="d7.html" class="recent-action" title="View Invoice">
+
+                                <i class="fa-solid fa-file-invoice"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION MODAL
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-card">
+
+            <button type="button" class="logout-modal-close" id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <span class="logout-modal-label">
+                SIGN OUT
+            </span>
+
+
+            <h2>
+                Are you sure you want to logout?
+            </h2>
+
+
+            <p>
+                You will need to sign in again to access
+                your Beauty Door dashboard.
+            </p>
+
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="cancelLogout">
+
+                    No, Stay
+
+                </button>
+
+
+                <a href="login.html" class="logout-confirm-btn">
+
+                    Yes, Logout
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

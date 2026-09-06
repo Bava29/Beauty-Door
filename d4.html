@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+     DASHBOARD LAYOUT
+========================================= -->
+
+    <div class="dashboard-layout">
+
+        <!-- =========================================
+         SIDEBAR
+    ========================================== -->
+
+        <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+            <button type="button" class="sidebar-close-btn" id="sidebarCloseToggle" aria-label="Close sidebar"><i
+                    class="fa-solid fa-xmark"></i></button>
+
+            <!-- Logo -->
+            <div class="sidebar-logo">
+
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Beauty Door">
+                </a>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-nav">
+
+                <!-- Main Menu -->
+                <div class="sidebar-menu-group">
+
+                    <span class="sidebar-menu-title">
+                        MAIN MENU
+                    </span>
+
+                    <ul>
+
+                        <li>
+                            <a href="dashboard.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+
+                                <span>Dashboard</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d2.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-scissors"></i>
+                                </span>
+
+                                <span>Browse Services</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d3.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </span>
+
+                                <span>Book a Service</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d4.html" class="sidebar-link active">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </span>
+
+                                <span>My Bookings</span>
+
+                                <span class="sidebar-badge">
+                                    2
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d5.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+
+                                <span>Track My Visit</span>
+
+                                <span class="sidebar-live">
+                                    LIVE
+                                </span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d6.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+
+                                <span>My Reviews</span>
+
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="d7.html" class="sidebar-link">
+
+                                <span class="sidebar-link-icon">
+                                    <i class="fa-solid fa-file-invoice"></i>
+                                </span>
+
+                                <span>Invoices</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <div class="sidebar-mobile-tools">
+
+                <div class="sidebar-mobile-quick-actions">
+                    <button type="button" class="header-icon-btn notification-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="notification" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+
+                    <button type="button" class="header-icon-btn settings-btn sidebar-mobile-quick-btn"
+                        data-mobile-control="settings" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                </div>
+
+                <button type="button" class="header-profile sidebar-mobile-profile" data-mobile-control="profile"
+                    aria-label="Profile">
+                    <span class="header-avatar">
+                        <img src="images/customer-profile.jpg" alt="Ananya">
+                    </span>
+                    <span class="header-profile-info">
+                        <strong>Ananya</strong>
+                        <small>Beauty Member</small>
+                    </span>
+                </button>
+            </div>
+
+            <!-- Sidebar Bottom -->
+            <div class="sidebar-bottom">
+
+                <!-- Logout -->
+                <button type="button" class="sidebar-logout" id="logoutBtn">
+
+                    <span class="logout-icon">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+         MAIN AREA
+    ========================================== -->
+
+        <div class="dashboard-main-area">
+
+
+            <!-- =====================================
+             FIXED HEADER
+        ====================================== -->
+
+            <header class="dashboard-header">
+
+                <!-- Header Left -->
+                <div class="header-left">
+
+                    <button type="button" class="header-menu-toggle" id="sidebarMenuToggle" aria-label="Open sidebar"
+                        aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+
+                    <span class="header-eyebrow">
+                        CUSTOMER DASHBOARD
+                    </span>
+
+                    <h1>
+                        My Bookings
+                    </h1>
+
+                </div>
+
+
+                <!-- Header Right -->
+                <div class="header-right">
+
+
+                    <!-- Notifications -->
+                    <button type="button" class="header-icon-btn notification-btn" aria-label="Notifications">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                        <span class="notification-badge">
+                            3
+                        </span>
+
+                    </button>
+
+
+                    <!-- Settings -->
+                    <button type="button" class="header-icon-btn settings-btn" aria-label="Settings">
+
+                        <i class="fa-solid fa-gear"></i>
+
+                    </button>
+
+
+                    <!-- Dark Mode -->
+                    <button type="button" class="header-icon-btn theme-toggle" id="themeToggle"
+                        aria-label="Toggle dark mode" title="Dark Mode">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+
+                    <!-- RTL -->
+                    <button type="button" class="header-icon-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL"
+                        title="RTL Mode">
+
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                    </button>
+
+
+                    <button type="button" class="header-profile">
+
+                        <span class="header-avatar">
+                            <img src="images/customer-profile.jpg" alt="Ananya">
+                        </span>
+
+                        <span class="header-profile-info">
+
+                            <strong>Ananya</strong>
+
+                            <small>
+                                Beauty Member
+                            </small>
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </header>
+
+            <main class="my-bookings-content">
+
+                <!-- =========================================
+         SECTION 01 — BOOKING OVERVIEW
+    ========================================== -->
+
+                <section class="bookings-overview-section">
+
+                    <div class="bookings-page-heading">
+
+                        <div>
+                            <span class="bookings-eyebrow">
+                                MY BEAUTY JOURNEY
+                            </span>
+
+                            <h2>
+                                Your Beauty Appointments
+                            </h2>
+
+                            <p>
+                                Keep track of your upcoming and past doorstep
+                                beauty visits in one place.
+                            </p>
+                        </div>
+
+                        <a href="d3.html" class="new-booking-btn">
+                            <i class="fa-solid fa-plus"></i>
+                            Book a New Service
+                        </a>
+
+                    </div>
+
+
+                    <div class="booking-overview-grid">
+
+                        <!-- Upcoming -->
+
+                        <div class="booking-stat-card">
+
+                            <div class="booking-stat-icon">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+
+                            <div class="booking-stat-content">
+
+                                <span>
+                                    UPCOMING VISITS
+                                </span>
+
+                                <strong>
+                                    1
+                                </strong>
+
+                                <small>
+                                    Next visit scheduled
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Completed -->
+
+                        <div class="booking-stat-card">
+
+                            <div class="booking-stat-icon">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+
+                            <div class="booking-stat-content">
+
+                                <span>
+                                    COMPLETED
+                                </span>
+
+                                <strong>
+                                    8
+                                </strong>
+
+                                <small>
+                                    Services completed
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Cancelled -->
+
+                        <div class="booking-stat-card">
+
+                            <div class="booking-stat-icon">
+                                <i class="fa-solid fa-calendar-xmark"></i>
+                            </div>
+
+                            <div class="booking-stat-content">
+
+                                <span>
+                                    CANCELLED
+                                </span>
+
+                                <strong>
+                                    1
+                                </strong>
+
+                                <small>
+                                    Cancelled services
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Total -->
+
+                        <div class="booking-stat-card">
+
+                            <div class="booking-stat-icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+
+                            <div class="booking-stat-content">
+
+                                <span>
+                                    TOTAL BOOKINGS
+                                </span>
+
+                                <strong>
+                                    10
+                                </strong>
+
+                                <small>
+                                    Your appointments
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+         SECTION 02 — UPCOMING BOOKING
+    ========================================== -->
+
+                <section class="upcoming-booking-section">
+
+                    <div class="bookings-section-heading">
+
+                        <div>
+
+                            <span>
+                                NEXT APPOINTMENT
+                            </span>
+
+                            <h2>
+                                Upcoming Booking
+                            </h2>
+
+                        </div>
+
+                        <span class="booking-confirmed-badge">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Confirmed
+                        </span>
+
+                    </div>
+
+
+                    <div class="upcoming-booking-card">
+
+                        <!-- Booking Date -->
+
+                        <div class="upcoming-date-block">
+
+                            <span>
+                                SEP
+                            </span>
+
+                            <strong>
+                                08
+                            </strong>
+
+                            <small>
+                                2026
+                            </small>
+
+                        </div>
+
+
+                        <!-- Booking Main -->
+
+                        <div class="upcoming-booking-main">
+
+                            <div class="upcoming-service-top">
+
+                                <div class="upcoming-service-icon">
+                                    <i class="fa-solid fa-spa"></i>
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        SKIN CARE
+                                    </span>
+
+                                    <h3>
+                                        Glow Facial
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="upcoming-booking-details">
+
+                                <div>
+
+                                    <i class="fa-regular fa-clock"></i>
+
+                                    <span>
+                                        10:00 AM
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-solid fa-hourglass-half"></i>
+
+                                    <span>
+                                        60 minutes
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                                    <span>
+                                        ₹799
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Beautician -->
+
+                        <div class="upcoming-beautician">
+
+                            <div class="beautician-avatar">
+
+                                <img src="images/beautician-meera.jpg" alt="Meera">
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    BEAUTY PROFESSIONAL
+                                </span>
+
+                                <strong>
+                                    Meera
+                                </strong>
+
+                                <small>
+                                    <i class="fa-solid fa-star"></i>
+                                    4.9 · Skin Specialist
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Actions -->
+
+                        <div class="upcoming-booking-actions">
+
+                            <a href="d5.html" class="track-booking-btn">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                Track Visit
+
+                            </a>
+
+                            <button type="button" class="manage-booking-btn" data-booking="Glow Facial">
+
+                                <i class="fa-solid fa-sliders"></i>
+
+                                Manage
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+         SECTION 03 — BOOKING HISTORY
+    ========================================== -->
+
+                <section class="booking-history-section">
+
+                    <div class="bookings-section-heading">
+
+                        <div>
+
+                            <span>
+                                YOUR BOOKINGS
+                            </span>
+
+                            <h2>
+                                Booking History
+                            </h2>
+
+                        </div>
+
+                        <span class="booking-history-count">
+                            10 Bookings
+                        </span>
+
+                    </div>
+
+
+                    <!-- Booking Filters -->
+
+                    <div class="booking-filter-bar">
+
+                        <button type="button" class="booking-filter-btn active" data-filter="all">
+
+                            All Bookings
+
+                        </button>
+
+                        <button type="button" class="booking-filter-btn" data-filter="upcoming">
+
+                            Upcoming
+
+                        </button>
+
+                        <button type="button" class="booking-filter-btn" data-filter="completed">
+
+                            Completed
+
+                        </button>
+
+                        <button type="button" class="booking-filter-btn" data-filter="cancelled">
+
+                            Cancelled
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Booking List -->
+
+                    <div class="booking-history-list">
+
+
+                        <!-- Booking 01 -->
+
+                        <div class="booking-history-item" data-status="upcoming">
+
+                            <div class="history-service-icon">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+
+                            <div class="history-service-info">
+
+                                <strong>
+                                    Glow Facial
+                                </strong>
+
+                                <span>
+                                    Skin Care · 60 min
+                                </span>
+
+                            </div>
+
+                            <div class="history-date">
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <strong>
+                                    Sep 08, 2026
+                                </strong>
+
+                            </div>
+
+                            <div class="history-beautician">
+
+                                <span>
+                                    PROFESSIONAL
+                                </span>
+
+                                <strong>
+                                    Meera
+                                </strong>
+
+                            </div>
+
+                            <div class="history-price">
+
+                                <strong>
+                                    ₹799
+                                </strong>
+
+                            </div>
+
+                            <span class="history-status upcoming">
+                                Upcoming
+                            </span>
+
+                            <button type="button" class="history-view-btn" data-booking="Glow Facial">
+
+                                View
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Booking 02 -->
+
+                        <div class="booking-history-item" data-status="completed">
+
+                            <div class="history-service-icon">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+
+                            <div class="history-service-info">
+
+                                <strong>
+                                    Haircut & Styling
+                                </strong>
+
+                                <span>
+                                    Hair · 45 min
+                                </span>
+
+                            </div>
+
+                            <div class="history-date">
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <strong>
+                                    Aug 28, 2026
+                                </strong>
+
+                            </div>
+
+                            <div class="history-beautician">
+
+                                <span>
+                                    PROFESSIONAL
+                                </span>
+
+                                <strong>
+                                    Priya
+                                </strong>
+
+                            </div>
+
+                            <div class="history-price">
+
+                                <strong>
+                                    ₹499
+                                </strong>
+
+                            </div>
+
+                            <span class="history-status completed">
+                                Completed
+                            </span>
+
+                            <button type="button" class="history-view-btn" data-booking="Haircut & Styling">
+
+                                View
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Booking 03 -->
+
+                        <div class="booking-history-item" data-status="completed">
+
+                            <div class="history-service-icon">
+                                <i class="fa-solid fa-hand-sparkles"></i>
+                            </div>
+
+                            <div class="history-service-info">
+
+                                <strong>
+                                    Nail Art
+                                </strong>
+
+                                <span>
+                                    Nails · 50 min
+                                </span>
+
+                            </div>
+
+                            <div class="history-date">
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <strong>
+                                    Aug 21, 2026
+                                </strong>
+
+                            </div>
+
+                            <div class="history-beautician">
+
+                                <span>
+                                    PROFESSIONAL
+                                </span>
+
+                                <strong>
+                                    Meera
+                                </strong>
+
+                            </div>
+
+                            <div class="history-price">
+
+                                <strong>
+                                    ₹699
+                                </strong>
+
+                            </div>
+
+                            <span class="history-status completed">
+                                Completed
+                            </span>
+
+                            <button type="button" class="history-view-btn" data-booking="Nail Art">
+
+                                View
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Booking 04 -->
+
+                        <div class="booking-history-item" data-status="completed">
+
+                            <div class="history-service-icon">
+                                <i class="fa-solid fa-leaf"></i>
+                            </div>
+
+                            <div class="history-service-info">
+
+                                <strong>
+                                    Hair Spa
+                                </strong>
+
+                                <span>
+                                    Hair · 60 min
+                                </span>
+
+                            </div>
+
+                            <div class="history-date">
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <strong>
+                                    Aug 14, 2026
+                                </strong>
+
+                            </div>
+
+                            <div class="history-beautician">
+
+                                <span>
+                                    PROFESSIONAL
+                                </span>
+
+                                <strong>
+                                    Priya
+                                </strong>
+
+                            </div>
+
+                            <div class="history-price">
+
+                                <strong>
+                                    ₹899
+                                </strong>
+
+                            </div>
+
+                            <span class="history-status completed">
+                                Completed
+                            </span>
+
+                            <button type="button" class="history-view-btn" data-booking="Hair Spa">
+
+                                View
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Booking 05 -->
+
+                        <div class="booking-history-item" data-status="cancelled">
+
+                            <div class="history-service-icon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+
+                            <div class="history-service-info">
+
+                                <strong>
+                                    Waxing Care
+                                </strong>
+
+                                <span>
+                                    Skin · 40 min
+                                </span>
+
+                            </div>
+
+                            <div class="history-date">
+
+                                <span>
+                                    DATE
+                                </span>
+
+                                <strong>
+                                    Aug 05, 2026
+                                </strong>
+
+                            </div>
+
+                            <div class="history-beautician">
+
+                                <span>
+                                    PROFESSIONAL
+                                </span>
+
+                                <strong>
+                                    Anu
+                                </strong>
+
+                            </div>
+
+                            <div class="history-price">
+
+                                <strong>
+                                    ₹599
+                                </strong>
+
+                            </div>
+
+                            <span class="history-status cancelled">
+                                Cancelled
+                            </span>
+
+                            <button type="button" class="history-view-btn" data-booking="Waxing Care">
+
+                                View
+
+                                <i class="fa-solid fa-chevron-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="booking-history-empty" id="bookingHistoryEmpty">
+
+                        <div>
+                            <i class="fa-regular fa-calendar-xmark"></i>
+                        </div>
+
+                        <h3>
+                            No Bookings Found
+                        </h3>
+
+                        <p>
+                            There are no bookings in this category yet.
+                        </p>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================================
+         SECTION 04 — QUICK ACTIONS & POLICY
+    ========================================== -->
+
+                <section class="booking-actions-section">
+
+                    <div class="booking-actions-card">
+
+                        <div class="booking-actions-content">
+
+                            <span>
+                                READY FOR YOUR NEXT VISIT?
+                            </span>
+
+                            <h2>
+                                Keep Your Beauty Routine Going.
+                            </h2>
+
+                            <p>
+                                Discover your favourite beauty treatments and
+                                book a professional home visit whenever you need one.
+                            </p>
+
+                            <div class="booking-action-buttons">
+
+                                <a href="d3.html" class="booking-primary-action">
+
+                                    Book a New Service
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                                <a href="d7.html" class="booking-secondary-action">
+
+                                    <i class="fa-solid fa-file-invoice"></i>
+
+                                    View Invoices
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="booking-policy-card">
+
+                            <div class="policy-icon">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                            </div>
+
+                            <span>
+                                BOOKING POLICY
+                            </span>
+
+                            <h3>
+                                Before Your Visit
+                            </h3>
+
+                            <ul>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Free cancellation up to 4 hours before visit
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Beautician details shared before your visit
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Secure handling of your booking information
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+     LOGOUT CONFIRMATION MODAL
+========================================= -->
+
+    <div class="logout-modal" id="logoutModal">
+
+        <div class="logout-modal-card">
+
+            <button type="button" class="logout-modal-close" id="closeLogoutModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="logout-modal-icon">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+            </div>
+
+
+            <span class="logout-modal-label">
+                SIGN OUT
+            </span>
+
+
+            <h2>
+                Are you sure you want to logout?
+            </h2>
+
+
+            <p>
+                You will need to sign in again to access
+                your Beauty Door dashboard.
+            </p>
+
+
+            <div class="logout-modal-actions">
+
+                <button type="button" class="logout-cancel-btn" id="cancelLogout">
+
+                    No, Stay
+
+                </button>
+
+
+                <a href="login.html" class="logout-confirm-btn">
+
+                    Yes, Logout
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Beauty Door - Professional beauty and salon services delivered to your doorstep.">
+    <meta name="keywords" content="home salon, beauty service, haircut, facial, waxing, nail art, bridal beauty">
+    <meta name="author" content="Beauty Door">
+
+    <!-- Page Title -->
+    <title>Beauty Door</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-body">
+
+
+    <!-- =========================================
+         AUTH PAGE
+    ========================================== -->
+
+    <main class="auth-page">
+
+        <!-- Top Controls -->
+        <div class="auth-controls">
+
+            <button type="button" class="auth-control-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode"
+                title="Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button type="button" class="auth-control-btn rtl-toggle" id="rtlToggle" aria-label="Toggle RTL mode" title="RTL Mode">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+
+        </div>
+
+        <!-- Login Card -->
+        <div class="auth-card">
+
+            <!-- Logo -->
+            <a href="index.html" class="auth-logo">
+                <img src="images/logo.png" alt="Beauty Door">
+            </a>
+
+
+            <!-- Heading -->
+            <div class="auth-heading">
+
+                <span class="auth-eyebrow">
+                    WELCOME BACK
+                </span>
+
+                <h1>
+                    Welcome to
+                    <span>Beauty Door.</span>
+                </h1>
+
+                <p>
+                    Sign in to book your beauty services and manage
+                    your home appointments with ease.
+                </p>
+
+            </div>
+
+
+            <!-- Login Form -->
+            <form class="auth-form" action="#" method="post">
+
+                <!-- Email -->
+                <div class="auth-form-group">
+
+                    <label for="login-email">
+                        Email Address
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email address"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="auth-form-group">
+
+                    <label for="login-password">
+                        Password
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password"
+                            required>
+
+                        <button type="button" class="password-toggle" aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Remember / Forgot -->
+                <div class="auth-form-options">
+
+                    <label class="remember-option">
+
+                        <input type="checkbox" name="remember">
+
+                        <span class="custom-checkbox"></span>
+
+                        <span>Remember me</span>
+
+                    </label>
+
+                    <a href="forgot-password.html">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button type="submit" class="auth-submit-btn">
+
+                    Login to Account
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="auth-divider">
+                <span>OR CONTINUE WITH</span>
+            </div>
+
+            <!-- Social Login -->
+            <div class="social-login">
+
+                <!-- Google -->
+                <a href="#" class="social-icon-btn google-icon" aria-label="Continue with Google">
+                    <img src="images/google-logo.svg" alt="Google">
+                </a>
+
+                <!-- Facebook -->
+                <a href="#" class="social-icon-btn facebook-icon" aria-label="Continue with Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <!-- Apple -->
+                <a href="#" class="social-icon-btn apple-icon" aria-label="Continue with Apple">
+                    <i class="fa-brands fa-apple"></i>
+                </a>
+
+            </div>
+
+            <!-- Register -->
+            <div class="auth-register">
+
+                <span>Don't have an account?</span>
+
+                <a href="register.html">
+                    Create an Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Password Toggle -->
+    <script>
+        const passwordToggle =
+            document.querySelector(".password-toggle");
+
+        const passwordInput =
+            document.querySelector("#login-password");
+
+        passwordToggle.addEventListener("click", function () {
+
+            const isPassword =
+                passwordInput.type === "password";
+
+            passwordInput.type =
+                isPassword ? "text" : "password";
+
+            this.innerHTML = isPassword
+                ? '<i class="fa-regular fa-eye-slash"></i>'
+                : '<i class="fa-regular fa-eye"></i>';
+
+        });
+    </script>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
