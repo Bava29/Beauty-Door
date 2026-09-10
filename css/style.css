@@ -13486,7 +13486,7 @@ html.dark-mode .safety-feature-icon {
 }
 
 html.dark-mode .safety-note {
-    background-color: var(--white-color);
+    background-color: transparent;
     border-color: var(--border-color);
 }
 
@@ -27546,4 +27546,53 @@ html[dir="rtl"] .booking-back a i {
         gap: 18px;
     }
 
+}
+
+/* =========================================
+   SERVICES PRICING TABS
+   MOBILE — 3 TOP / 2 BOTTOM CENTER
+========================================= */
+
+@media (max-width: 767px) {
+
+    .services-pricing-tabs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        overflow: visible;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+    }
+
+    .services-pricing-tab {
+        flex: 0 0 calc((100% - 16px) / 3);
+        width: calc((100% - 16px) / 3);
+        min-height: 42px;
+        padding: 0 8px;
+        font-size: 12px;
+        border-radius: 8px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .services-pricing-tab[data-category="bridal"] {
+        flex: 0 0 auto;
+        width: 145px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}
+
+/* Center MOST LOVED badge inside featured package */
+.featured-package .services-package-badge {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
 }
