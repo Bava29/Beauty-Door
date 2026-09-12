@@ -11626,14 +11626,8 @@ body {
             rgba(38, 27, 31, 0.78) 100%);
 }
 
-
-/* =========================
-   CONTENT
-========================= */
-
 .safety-final-content {
     position: relative;
-
     z-index: 2;
 
     width: 100%;
@@ -11645,7 +11639,6 @@ body {
 
     text-align: center;
 }
-
 
 /* =========================
    EYEBROW
@@ -27595,4 +27588,48 @@ html[dir="rtl"] .booking-back a i {
     left: 50%;
     right: auto;
     transform: translateX(-50%);
+}
+
+/* =========================================================
+   HOME 2 — REDUCE GAP BETWEEN JOURNEY & LOOKS
+========================================================= */
+
+.home2-journey-section {
+    padding-bottom: 65px !important;
+}
+
+.home2-looks-section {
+    padding-top: 65px !important;
+}
+
+/* =========================================================
+   SAFETY FINAL CTA — DESKTOP ONLY
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .safety-final-section {
+        min-height: auto !important;
+    }
+
+    .safety-final-content {
+        padding: 80px 20px !important;
+    }
+
+    .safety-final-eyebrow {
+        margin-bottom: 13px !important;
+    }
+
+    .safety-final-content h2 {
+        margin-bottom: 18px !important;
+    }
+
+    .safety-final-content>p {
+        margin-bottom: 30px !important;
+    }
+
+    .safety-final-promise {
+        margin-bottom: 32px !important;
+    }
+
 }
